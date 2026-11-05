@@ -1,0 +1,993 @@
+/* ==========================================================================
+   Contact & Consultation Page Styles - RBN AYUSH HEALTH CARE
+   Pixel-accurate UI recreation based on reference screenshot
+   ========================================================================== */
+
+.contact-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 3rem;
+}
+
+/* ==========================================================================
+   CONTAINER & COMMON UTILITIES
+   ========================================================================== */
+.contact-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.contact-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+/* Section Header With Gold Line */
+.contact-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-section-header .section-icon {
+  color: #07552F;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-section-header h2 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.75rem;
+  color: #071B2E;
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.contact-section-header .header-gold-line {
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(to right, #D49A00 0%, rgba(212, 154, 0, 0.4) 60%, rgba(212, 154, 0, 0) 100%);
+  margin-left: 0.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.contact-breadcrumb-bar {
+  padding: 1rem 0 0.5rem;
+}
+
+.contact-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.contact-breadcrumb-item a {
+  color: #07552F;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.contact-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.contact-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+
+.contact-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.contact-hero-section {
+  padding: 0.75rem 0 2.5rem;
+}
+
+.contact-hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-hero-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 3.25rem;
+  line-height: 1.12;
+  color: #07552F;
+  margin: 0 0 1rem 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.contact-hero-ornament {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-hero-ornament svg {
+  color: #D49A00;
+}
+
+.contact-hero-ornament-line {
+  width: 50px;
+  height: 1.5px;
+  background-color: #D49A00;
+}
+
+.contact-hero-desc {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #2D3748;
+  margin: 0;
+  max-width: 540px;
+}
+
+/* Curved Hero Image */
+.contact-hero-image-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero-image-frame {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 16 / 10.5;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  border: 3px solid #E6D2A8;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(7, 85, 47, 0.12);
+  background-color: #F4EEDF;
+}
+
+.contact-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Decorative floating leaves */
+.hero-leaf-decor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero-leaf-top-left {
+  top: -15px;
+  left: -20px;
+  width: 65px;
+  opacity: 0.85;
+}
+
+.hero-leaf-top-right {
+  top: -20px;
+  right: -25px;
+  width: 75px;
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   CONTACT INFORMATION SECTION
+   ========================================================================== */
+.contact-info-section {
+  padding: 1rem 0 2rem;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+/* Details Card */
+.contact-details-card {
+  background-color: #FFFFFF;
+  border: 1px solid #EAE3D2;
+  border-radius: 18px;
+  padding: 1.5rem 1.85rem;
+  box-shadow: 0 4px 20px rgba(0, 61, 37, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-detail-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #F0EAE1;
+}
+
+.contact-detail-row:first-child {
+  padding-top: 0.25rem;
+}
+
+.contact-detail-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0.25rem;
+}
+
+.contact-icon-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #07552F;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(7, 85, 47, 0.2);
+}
+
+.contact-detail-text {
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #1A202C;
+}
+
+.contact-detail-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #071B2E;
+  letter-spacing: 0.01em;
+}
+
+.contact-detail-address {
+  color: #2D3748;
+}
+
+.contact-detail-phone {
+  font-weight: 700;
+  color: #071B2E;
+  font-size: 1.05rem;
+}
+
+.contact-detail-hours,
+.contact-detail-email,
+.contact-detail-whatsapp {
+  color: #3B424D;
+  font-weight: 500;
+}
+
+/* Building Card */
+.contact-building-card {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #EAE3D2;
+  box-shadow: 0 4px 20px rgba(0, 61, 37, 0.06);
+  background-color: #EFE8DA;
+  display: flex;
+}
+
+.contact-building-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  min-height: 280px;
+}
+
+/* ==========================================================================
+   CONTACT ACTION BUTTONS (4 In A Row)
+   ========================================================================== */
+.contact-actions-section {
+  padding: 0.5rem 0 2.5rem;
+}
+
+.contact-actions-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 3px 12px rgba(0, 61, 37, 0.08);
+}
+
+.action-btn-solid {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border: 1.5px solid #07552F;
+}
+
+.action-btn-solid:hover {
+  background-color: #003D22;
+  border-color: #003D22;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.2);
+}
+
+.action-btn-outline {
+  background-color: #FFFDF8;
+  color: #07552F;
+  border: 1.5px solid #07552F;
+}
+
+.action-btn-outline:hover {
+  background-color: #F1EAD8;
+  color: #003D22;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.12);
+}
+
+/* ==========================================================================
+   WHAT CAN I CONTACT RBN ABOUT?
+   ========================================================================== */
+.contact-topics-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.contact-topics-layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 2rem;
+  align-items: center;
+}
+
+.contact-topics-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.contact-topics-row-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.85rem;
+}
+
+.contact-topics-row-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.contact-topic-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ECE3D0;
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 61, 37, 0.03);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  min-height: 64px;
+}
+
+.contact-topic-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.08);
+  border-color: #D49A00;
+}
+
+.contact-topic-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #EBF3E4;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-topic-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 0.88rem;
+  line-height: 1.25;
+  color: #071B2E;
+  margin: 0;
+  font-weight: 600;
+}
+
+.contact-topics-graphic-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-topics-graphic {
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(7, 85, 47, 0.08));
+}
+
+/* ==========================================================================
+   CONTACT FORM SECTION (Form, Middle Photo, Privacy & Emergency Cards)
+   ========================================================================== */
+.contact-form-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.contact-form-layout {
+  display: grid;
+  grid-template-columns: 1.35fr 0.8fr 0.95fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* Left: Form Card */
+.contact-form-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ECE3D0;
+  border-radius: 18px;
+  padding: 1.75rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 61, 37, 0.04);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-group label {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #071B2E;
+}
+
+.form-group label .required-star {
+  color: #D32F2F;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #D5CEBE;
+  border-radius: 8px;
+  background-color: #FAF8F2;
+  font-size: 0.88rem;
+  color: #101820;
+  font-family: inherit;
+  transition: border-color 0.18s ease, background-color 0.18s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #07552F;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(7, 85, 47, 0.1);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Consent Checkbox */
+.consent-checkbox-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+}
+
+.consent-checkbox-wrap input[type="checkbox"] {
+  margin-top: 0.2rem;
+  accent-color: #07552F;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.consent-checkbox-text {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #4A5568;
+  cursor: pointer;
+}
+
+/* Submit Button */
+.contact-submit-btn {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(7, 85, 47, 0.18);
+  margin-top: 0.25rem;
+  width: 100%;
+}
+
+.contact-submit-btn:hover {
+  background-color: #003D22;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.25);
+}
+
+.form-success-banner {
+  background-color: #EAF2D9;
+  border: 1px solid #BED2A0;
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  font-size: 0.88rem;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Middle Photo */
+.contact-middle-photo-wrap {
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #ECE3D0;
+  box-shadow: 0 4px 20px rgba(0, 61, 37, 0.05);
+  background-color: #EFE8DA;
+  display: flex;
+}
+
+.contact-middle-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right Column: Privacy & Emergency Stack */
+.contact-notices-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+
+.notice-card {
+  border-radius: 18px;
+  padding: 1.35rem 1.45rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  box-shadow: 0 3px 12px rgba(0, 61, 37, 0.04);
+}
+
+.privacy-notice {
+  background-color: #EAF2D9;
+  border: 1px solid #D5E4BD;
+}
+
+.emergency-notice {
+  background-color: #FFF3E3;
+  border: 1px solid #FCD9B8;
+}
+
+.notice-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.privacy-notice .notice-icon {
+  color: #07552F;
+}
+
+.emergency-notice .notice-icon {
+  color: #D96B00;
+}
+
+.notice-header h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.15rem;
+  color: #071B2E;
+  margin: 0;
+  font-weight: 700;
+}
+
+.notice-body {
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: #2D3748;
+  margin: 0;
+}
+
+/* ==========================================================================
+   BEFORE YOUR VISIT SECTION
+   ========================================================================== */
+.contact-before-visit-section {
+  padding: 1rem 0 2rem;
+}
+
+.before-visit-card {
+  background-color: #FFFFFF;
+  border: 1px solid #ECE3D0;
+  border-radius: 18px;
+  padding: 1.5rem 2rem;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 61, 37, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.before-visit-img-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.before-visit-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.before-visit-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.before-visit-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.before-visit-header h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.5rem;
+  color: #071B2E;
+  margin: 0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.before-visit-header .before-gold-line {
+  flex: 1;
+  height: 1.5px;
+  background: linear-gradient(to right, #D49A00 0%, rgba(212, 154, 0, 0.3) 60%, rgba(212, 154, 0, 0) 100%);
+}
+
+.before-visit-desc {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #2D3748;
+  margin: 0;
+}
+
+/* ==========================================================================
+   BOOK A CONSULTATION CTA BANNER
+   ========================================================================== */
+.contact-cta-section {
+  padding: 1rem 0 2rem;
+}
+
+.contact-cta-banner {
+  background: linear-gradient(135deg, #003D22 0%, #07552F 100%);
+  border-radius: 20px;
+  padding: 1.15rem 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 30px rgba(0, 61, 37, 0.18);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-cta-banner:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(0, 61, 37, 0.25);
+}
+
+.cta-banner-left-img {
+  width: 95px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cta-banner-center {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cta-banner-divider {
+  width: 1px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.cta-banner-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.85rem;
+  color: #FFFFFF;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.cta-circle-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.contact-cta-banner:hover .cta-circle-arrow-btn {
+  transform: translateX(4px);
+  background-color: #FFF9EC;
+}
+
+.cta-banner-right-img {
+  width: 80px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   RECOMMENDED INTERNAL LINKS
+   ========================================================================== */
+.contact-links-section {
+  padding: 1rem 0 1.5rem;
+}
+
+.contact-links-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-link-pill {
+  background-color: #FFFFFF;
+  border: 1px solid #ECE3D0;
+  border-radius: 30px;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #071B2E;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 2px 10px rgba(0, 61, 37, 0.03);
+  transition: all 0.2s ease;
+}
+
+.contact-link-pill:hover {
+  transform: translateY(-2px);
+  border-color: #D49A00;
+  box-shadow: 0 6px 18px rgba(7, 85, 47, 0.08);
+  color: #07552F;
+}
+
+.link-pill-left {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.link-pill-icon {
+  color: #07552F;
+  display: flex;
+  align-items: center;
+}
+
+.link-pill-arrow {
+  color: #07552F;
+  transition: transform 0.2s ease;
+}
+
+.contact-link-pill:hover .link-pill-arrow {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================================================== */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .contact-hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.75rem;
+  }
+
+  .contact-hero-content {
+    align-items: center;
+  }
+
+  .contact-hero-title {
+    font-size: 2.75rem;
+  }
+
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-actions-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-topics-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-topics-graphic-wrap {
+    display: none;
+  }
+
+  .contact-form-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-middle-photo-wrap {
+    max-height: 320px;
+  }
+
+  .before-visit-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .before-visit-header {
+    justify-content: center;
+  }
+
+  .before-visit-header .before-gold-line {
+    display: none;
+  }
+
+  .cta-banner-divider {
+    display: none;
+  }
+
+  .contact-links-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .contact-hero-title {
+    font-size: 2.25rem;
+  }
+
+  .contact-section-header h2 {
+    font-size: 1.4rem;
+    white-space: normal;
+  }
+
+  .contact-section-header .header-gold-line {
+    display: none;
+  }
+
+  .contact-actions-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-topics-row-4,
+  .contact-topics-row-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .cta-banner-left-img,
+  .cta-banner-right-img {
+    display: none;
+  }
+
+  .cta-banner-title {
+    font-size: 1.45rem;
+  }
+}
+

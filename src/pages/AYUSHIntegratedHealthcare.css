@@ -1,0 +1,762 @@
+/* AYUSH Integrated Healthcare Page Styles */
+
+.ayush-page {
+  background-color: #FBF7EC;
+  color: #111820;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.ayush-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.ayush-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+}
+
+.ayush-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ayush-breadcrumb-item a {
+  color: #064E2B;
+  font-weight: 500;
+  transition: color 0.18s ease;
+}
+
+.ayush-breadcrumb-item a:hover {
+  color: #063B25;
+}
+
+.ayush-breadcrumb-separator {
+  color: #A8B99A;
+  font-size: 0.8rem;
+}
+
+.ayush-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.ayush-hero-section {
+  padding: 1.5rem 0 3rem;
+  position: relative;
+}
+
+.ayush-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.ayush-hero-eyebrow-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.ayush-hero-eyebrow {
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #C58A16;
+  text-transform: uppercase;
+}
+
+.ayush-hero-eyebrow-line {
+  flex-grow: 1;
+  max-width: 140px;
+  height: 1.5px;
+  background-color: #C58A16;
+  opacity: 0.75;
+}
+
+.ayush-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 400;
+  color: #111820;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+}
+
+.ayush-hero-title-green {
+  color: #064E2B;
+}
+
+.ayush-hero-desc {
+  font-size: 0.94rem;
+  color: #3b443e;
+  line-height: 1.6;
+  max-width: 480px;
+  margin-bottom: 1.75rem;
+}
+
+.btn-ayush-hero {
+  background-color: #064E2B;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  padding: 0.7rem 1.6rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  box-shadow: 0 4px 12px rgba(6, 78, 43, 0.25);
+  transition: all 0.2s ease;
+}
+
+.btn-ayush-hero:hover {
+  background-color: #063B25;
+  transform: translateY(-1px);
+}
+
+/* Hero Right Image */
+.ayush-hero-image-wrap {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.ayush-hero-arch-container {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 180px 180px 30px 30px;
+  overflow: hidden;
+  border: 2px solid #C58A16;
+  box-shadow: 0 12px 36px rgba(6, 78, 43, 0.12);
+  background-color: #FFFDF7;
+}
+
+.ayush-hero-img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ==========================================================================
+   WHAT IS AN INTEGRATED AYUSH APPROACH?
+   ========================================================================== */
+.ayush-approach-section {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(232, 224, 207, 0.8);
+}
+
+.ayush-section-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-bottom: 2.25rem;
+}
+
+.ayush-header-leaf {
+  color: #064E2B;
+}
+
+.ayush-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2rem, 2.7vw, 2.5rem);
+  font-weight: 400;
+  color: #063B25;
+  letter-spacing: -0.01em;
+}
+
+.ayush-header-line {
+  width: 70px;
+  height: 1.5px;
+  background-color: #C58A16;
+}
+
+.ayush-approach-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.ayush-approach-text-col p {
+  font-size: 0.92rem;
+  color: #3b443e;
+  line-height: 1.65;
+  margin-bottom: 1.15rem;
+}
+
+.ayush-approach-text-col p:last-child {
+  margin-bottom: 0;
+}
+
+.ayush-approach-image-wrap {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid #C58A16;
+  box-shadow: 0 6px 20px rgba(6, 78, 43, 0.08);
+}
+
+.ayush-approach-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   WELLNESS DISCIPLINES (4 CARDS)
+   ========================================================================== */
+.ayush-disciplines-section {
+  padding: 3rem 0 3.5rem;
+  border-top: 1px solid rgba(232, 224, 207, 0.8);
+}
+
+.disciplines-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.15rem;
+}
+
+.discipline-card {
+  background-color: #FFFDF7;
+  border: 1px solid #E8E0CF;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(6, 78, 43, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.discipline-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(6, 78, 43, 0.08);
+  border-color: #A8B99A;
+}
+
+.discipline-thumb-wrap {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  background-color: #f0ebe0;
+}
+
+.discipline-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.discipline-icon-badge {
+  position: absolute;
+  bottom: -16px;
+  left: 16px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #064E2B;
+  border: 1.5px solid #C58A16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.discipline-body {
+  padding: 1.4rem 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.discipline-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.18rem;
+  font-weight: 400;
+  color: #063B25;
+  line-height: 1.2;
+  margin-bottom: 0.65rem;
+}
+
+.discipline-desc {
+  font-size: 0.81rem;
+  color: #4c544d;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==========================================================================
+   HOW AN INTEGRATED CONSULTATION WORKS (6 STEPS)
+   ========================================================================== */
+.ayush-consult-works-section {
+  padding: 3rem 0;
+  border-top: 1px solid rgba(232, 224, 207, 0.8);
+}
+
+.consult-steps-row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 0.75rem;
+  position: relative;
+}
+
+.consult-step-card-wrap {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.consult-step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.consult-step-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.consult-step-num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #C58A16;
+  color: #FFFFFF;
+  font-size: 0.78rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consult-step-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #EAF2DE;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(6, 78, 43, 0.08);
+}
+
+.consult-step-text {
+  font-size: 0.8rem;
+  color: #3b443e;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.consult-step-arrow {
+  position: absolute;
+  top: 14px;
+  right: -11px;
+  color: #C58A16;
+  font-size: 1.15rem;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   WHO MAY FIND THIS APPROACH USEFUL?
+   ========================================================================== */
+.ayush-useful-section {
+  padding: 2.5rem 0 3.5rem;
+  border-top: 1px solid rgba(232, 224, 207, 0.8);
+}
+
+.useful-split-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.useful-image-wrap {
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #C58A16;
+  box-shadow: 0 4px 14px rgba(6, 78, 43, 0.1);
+  height: 140px;
+}
+
+.useful-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.useful-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.useful-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.useful-title-icon {
+  color: #C58A16;
+}
+
+.useful-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-weight: 400;
+  color: #063B25;
+}
+
+.useful-desc {
+  font-size: 0.92rem;
+  color: #3b443e;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ==========================================================================
+   FAQ & SCHEDULE BANNER (SPLIT ROW)
+   ========================================================================== */
+.ayush-faq-banner-section {
+  padding: 2.5rem 0 3.5rem;
+  border-top: 1px solid rgba(232, 224, 207, 0.8);
+}
+
+.faq-banner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* FAQ Column */
+.ayush-faq-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.ayush-faq-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.ayush-faq-icon {
+  color: #C58A16;
+}
+
+.ayush-faq-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #063B25;
+}
+
+.ayush-faq-line {
+  flex-grow: 1;
+  height: 1.5px;
+  background-color: #C58A16;
+}
+
+.ayush-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.ayush-accordion-item {
+  background-color: #FFFDF7;
+  border: 1px solid #E8E0CF;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.ayush-accordion-item.active {
+  border-color: #064E2B;
+}
+
+.ayush-accordion-btn {
+  width: 100%;
+  padding: 0.85rem 1.15rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #063B25;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.ayush-accordion-symbol {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #064E2B;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.ayush-accordion-content {
+  padding: 0 1.15rem 0.95rem;
+  font-size: 0.85rem;
+  color: #5C625B;
+  line-height: 1.55;
+  border-top: 1px dashed rgba(232, 224, 207, 0.7);
+  padding-top: 0.65rem;
+}
+
+/* Schedule CTA Banner */
+.ayush-cta-banner {
+  background-color: #064E2B;
+  border-radius: 16px;
+  padding: 2.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(6, 78, 43, 0.2);
+}
+
+.cta-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  z-index: 2;
+}
+
+.cta-calendar-icon-wrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.cta-banner-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.cta-arrow-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.ayush-cta-banner:hover .cta-arrow-btn {
+  transform: scale(1.08);
+  background-color: #FBF7EC;
+}
+
+.cta-stones-decor {
+  position: absolute;
+  right: -8px;
+  bottom: -6px;
+  width: 75px;
+  height: 65px;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ==========================================================================
+   RECOMMENDED INTERNAL LINKS
+   ========================================================================== */
+.ayush-links-section {
+  padding: 1.5rem 0 1rem;
+}
+
+.ayush-links-card {
+  background-color: #EAF2DE;
+  border: 1px solid rgba(6, 78, 43, 0.12);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  text-align: center;
+}
+
+.ayush-links-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #064E2B;
+  margin-bottom: 1.25rem;
+}
+
+.ayush-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.pill-link-btn {
+  background-color: #FFFFFF;
+  color: #064E2B;
+  border: 1px solid #E8E0CF;
+  border-radius: var(--radius-full);
+  padding: 0.55rem 1.25rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  box-shadow: 0 2px 6px rgba(6, 78, 43, 0.05);
+  transition: all 0.2s ease;
+}
+
+.pill-link-btn:hover {
+  background-color: #064E2B;
+  color: #FFFFFF;
+  border-color: #064E2B;
+  transform: translateY(-2px);
+}
+
+.pill-icon {
+  color: #C58A16;
+}
+
+.pill-link-btn:hover .pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN RULES
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .disciplines-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .consult-steps-row {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .consult-step-arrow {
+    display: none;
+  }
+
+  .faq-banner-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .ayush-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .ayush-hero-image-wrap {
+    order: 2;
+  }
+
+  .ayush-approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .useful-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .useful-image-wrap {
+    height: 180px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ayush-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .disciplines-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consult-steps-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .ayush-cta-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+  }
+
+  .cta-banner-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .cta-stones-decor {
+    display: none;
+  }
+
+  .ayush-links-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pill-link-btn {
+    justify-content: center;
+  }
+}
+

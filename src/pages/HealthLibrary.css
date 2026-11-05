@@ -1,0 +1,949 @@
+/* ==========================================================================
+   Health Library Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.library-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.library-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.library-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.library-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.library-breadcrumb-item a {
+  color: #07552F;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.library-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.library-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.library-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.library-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.library-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.library-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.library-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.3rem, 3.8vw, 3.4rem);
+  font-weight: 400;
+  color: #07552F;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.library-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.25rem;
+  color: #D49A00;
+}
+
+.library-hero-divider::before,
+.library-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.library-hero-desc {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0 0 1.5rem 0;
+}
+
+.library-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #07552F;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.25);
+  transition: all 0.25s ease;
+}
+
+.library-hero-cta:hover {
+  background-color: #003D25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 85, 47, 0.35);
+  color: #FFFFFF;
+}
+
+.library-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.library-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 10px 30px rgba(7, 85, 47, 0.12);
+  background-color: #FFFFFF;
+}
+
+.library-hero-img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 1: EXPLORE BY TOPIC (8 Cards in 4x2 Grid)
+   ========================================================================== */
+.library-topics-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.library-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.library-section-line {
+  flex: 1;
+  max-width: 160px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.library-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.library-section-icon {
+  color: #07552F;
+}
+
+.library-topics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.library-topic-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.75rem;
+}
+
+.library-topic-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(7, 85, 47, 0.1);
+  border-color: #D49A00;
+}
+
+.library-topic-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 105px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #F4EEDC;
+  margin-bottom: 0.75rem;
+}
+
+.library-topic-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.library-topic-badge {
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #07552F;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(7, 85, 47, 0.35);
+  border: 2px solid #FFFFFF;
+  z-index: 2;
+}
+
+.library-topic-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 0.25rem 0.25rem;
+}
+
+.library-topic-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.library-topic-arrow {
+  color: #07552F;
+  transition: transform 0.2s ease;
+}
+
+.library-topic-card:hover .library-topic-arrow {
+  transform: translateX(3px);
+}
+
+/* ==========================================================================
+   SECTION 2: FEATURED EDUCATIONAL ARTICLES
+   ========================================================================== */
+.library-featured-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.library-featured-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.75rem;
+  align-items: stretch;
+}
+
+.library-featured-main-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+}
+
+.library-featured-main-img-wrap {
+  width: 100%;
+  height: 100%;
+  min-height: 160px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #E6DECA;
+}
+
+.library-featured-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.library-featured-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.library-featured-main-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.library-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: #EAF2D7;
+  color: #07552F;
+  padding: 0.55rem 1.15rem;
+  border-radius: 9999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #D6E5C2;
+}
+
+.library-pill-btn:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+}
+
+.library-featured-side-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.library-featured-side-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  overflow: hidden;
+  padding: 0.95rem;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1.15rem;
+  align-items: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+}
+
+.library-featured-side-img-wrap {
+  width: 100%;
+  height: 85px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #E6DECA;
+}
+
+.library-featured-side-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.library-featured-side-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.65rem;
+}
+
+.library-featured-side-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* ==========================================================================
+   SECTION 3: FIND ARTICLES & DIRECTORY
+   ========================================================================== */
+.library-find-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.library-search-filters-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.library-search-box-wrap {
+  flex: 1;
+  max-width: 420px;
+}
+
+.library-search-form {
+  display: flex;
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid #D6CEBC;
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.library-search-input {
+  flex: 1;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.9rem;
+  outline: none;
+  font-family: inherit;
+  color: #101820;
+}
+
+.library-search-btn {
+  background-color: #07552F;
+  border: none;
+  color: #FFFFFF;
+  padding: 0.65rem 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.library-search-btn:hover {
+  background-color: #003D25;
+}
+
+.library-filters-wrap {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.library-filters-label {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #5C625B;
+}
+
+.library-filters-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.library-filter-pill {
+  background-color: #FFFFFF;
+  border: 1px solid #D6CEBC;
+  color: #2D3A31;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.library-filter-pill:hover {
+  border-color: #07552F;
+  color: #07552F;
+}
+
+.library-filter-pill.active {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+}
+
+/* Directory Card */
+.library-directory-card {
+  background-color: #FFFDF8;
+  border: 1px solid #E6DECA;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 1.5rem 1.85rem;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.25rem;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(7, 85, 47, 0.05);
+}
+
+.library-directory-img-wrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.library-directory-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.library-directory-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.library-directory-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.library-directory-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  font-size: 0.83rem;
+  line-height: 1.45;
+  color: #2D3A31;
+}
+
+.library-directory-num {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #D49A00;
+  flex-shrink: 0;
+}
+
+.library-directory-text {
+  color: #101820;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   SECTION 4: ARTICLE QUALITY AND EDITORIAL GUIDELINES
+   ========================================================================== */
+.library-guidelines-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.library-guidelines-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.6fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.library-guideline-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  padding: 1.5rem 1.4rem;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.library-guideline-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.library-guideline-icon {
+  color: #D49A00;
+  flex-shrink: 0;
+}
+
+.library-guideline-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.library-guideline-desc {
+  font-size: 0.84rem;
+  line-height: 1.62;
+  color: #4A554F;
+  margin: 0;
+}
+
+.library-structure-checklist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+}
+
+.library-structure-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #384A3E;
+}
+
+.library-check-icon {
+  color: #07552F;
+  flex-shrink: 0;
+  position: relative;
+  top: 2px;
+}
+
+/* ==========================================================================
+   SECTION 5: AEO & GEO WRITING RULE
+   ========================================================================== */
+.library-aeo-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.library-aeo-card {
+  background-color: #FFFDF8;
+  border: 1px solid #E6DECA;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 1.5rem 1.85rem;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.25rem;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(7, 85, 47, 0.05);
+}
+
+.library-aeo-img-wrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.library-aeo-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.library-aeo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.library-aeo-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.library-aeo-desc {
+  font-size: 0.88rem;
+  line-height: 1.62;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 6: EXPLORE THE HEALTH LIBRARY CTA BANNER
+   ========================================================================== */
+.library-banner-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.library-full-banner {
+  background: linear-gradient(135deg, #003D25 0%, #07552F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.library-banner-left-wrap {
+  width: 110px;
+  height: 68px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.library-banner-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.library-banner-divider {
+  width: 1px;
+  height: 56px;
+  background-color: rgba(212, 154, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.library-banner-center {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.library-banner-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.library-banner-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.library-banner-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9EC;
+  color: #003D25;
+}
+
+/* ==========================================================================
+   SECTION 7: RECOMMENDED INTERNAL LINKS (5 Buttons)
+   ========================================================================== */
+.library-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.library-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.library-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.library-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.library-links-icon {
+  color: #D49A00;
+}
+
+.library-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.library-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #101820;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.45rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.library-link-pill-icon {
+  color: #07552F;
+}
+
+.library-link-pill:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.2);
+}
+
+.library-link-pill:hover .library-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .library-topics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .library-featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-search-filters-row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .library-directory-card {
+    grid-template-columns: 1fr;
+  }
+
+  .library-guidelines-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-aeo-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .library-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .library-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .library-topics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .library-featured-main-card {
+    grid-template-columns: 1fr;
+  }
+
+  .library-featured-side-card {
+    grid-template-columns: 1fr;
+  }
+
+  .library-directory-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .library-structure-checklist {
+    grid-template-columns: 1fr;
+  }
+
+  .library-full-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .library-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .library-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

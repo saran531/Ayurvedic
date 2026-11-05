@@ -1,0 +1,753 @@
+/* ==========================================================================
+   3R Health Revival Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.three-r-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.three-r-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.three-r-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.three-r-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.three-r-breadcrumb-item a {
+  color: #07552F;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.three-r-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.three-r-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.three-r-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.three-r-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.three-r-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.three-r-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.three-r-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 400;
+  color: #07552F;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.three-r-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.5rem;
+  color: #D49A00;
+}
+
+.three-r-hero-divider::before,
+.three-r-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.three-r-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #07552F;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.25);
+  transition: all 0.25s ease;
+}
+
+.three-r-hero-cta:hover {
+  background-color: #003D25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 85, 47, 0.35);
+  color: #FFFFFF;
+}
+
+.three-r-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.three-r-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 10px 30px rgba(7, 85, 47, 0.12);
+  background-color: #FFFFFF;
+}
+
+.three-r-hero-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 1: A STRUCTURED RBN WELLNESS JOURNEY
+   ========================================================================== */
+.three-r-journey-section {
+  padding: 1.5rem 0 2rem;
+}
+
+.three-r-journey-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.three-r-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.three-r-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.three-r-section-icon {
+  color: #07552F;
+}
+
+.three-r-section-gold-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.three-r-section-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+.three-r-pill-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(7, 85, 47, 0.1);
+  background-color: #FFFFFF;
+}
+
+.three-r-pill-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 2: THREE WELLNESS STAGES (3 Equal-Width Cards)
+   ========================================================================== */
+.three-r-stages-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.three-r-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.three-r-stage-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  padding: 1.15rem;
+}
+
+.three-r-stage-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(7, 85, 47, 0.1);
+  border-color: #D49A00;
+}
+
+.three-r-badge {
+  position: absolute;
+  top: 1.45rem;
+  left: 1.45rem;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #E6AF2E 0%, #C48E00 100%);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: 0 3px 8px rgba(196, 142, 0, 0.35);
+  z-index: 2;
+  border: 2px solid #FFFFFF;
+}
+
+.three-r-stage-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #F4EEDC;
+  margin-bottom: 1.1rem;
+}
+
+.three-r-stage-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.three-r-stage-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.three-r-stage-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.65rem;
+}
+
+.three-r-stage-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.three-r-stage-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.three-r-stage-desc {
+  font-size: 0.84rem;
+  line-height: 1.62;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 3: WHAT MAKES 3R DIFFERENT? (Horizontal Banner)
+   ========================================================================== */
+.three-r-banner-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.three-r-banner-card {
+  background-color: #EBF3E8;
+  border: 1px solid #D1E2CD;
+  border-radius: 20px;
+  padding: 1.4rem 1.85rem;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 1.65rem;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(7, 85, 47, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.three-r-banner-image-wrap {
+  width: 160px;
+  height: 85px;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.three-r-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.three-r-banner-divider {
+  width: 2px;
+  height: 65px;
+  background-color: #A3C9A8;
+  flex-shrink: 0;
+}
+
+.three-r-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.three-r-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.three-r-banner-icon {
+  color: #07552F;
+}
+
+.three-r-banner-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #101820;
+  margin: 0;
+}
+
+.three-r-banner-text {
+  font-size: 0.88rem;
+  line-height: 1.62;
+  color: #384A3E;
+  margin: 0;
+}
+
+.three-r-banner-leaves-wrap {
+  color: #8FB996;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+/* ==========================================================================
+   SECTION 4: FAQ & ASK ABOUT 3R CTA ROW
+   ========================================================================== */
+.three-r-faq-cta-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.three-r-faq-cta-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* FAQ Column */
+.three-r-faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.three-r-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.three-r-faq-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.three-r-faq-title-icon {
+  color: #D49A00;
+}
+
+.three-r-faq-header-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.three-r-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.three-r-faq-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.three-r-faq-item:hover {
+  border-color: #D49A00;
+}
+
+.three-r-faq-item.active {
+  border-color: #07552F;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.08);
+}
+
+.three-r-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #101820;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.three-r-faq-toggle-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.three-r-faq-answer {
+  padding: 0 1.15rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4A554F;
+  border-top: 1px solid #F0E9DA;
+  padding-top: 0.75rem;
+  margin: 0;
+}
+
+/* CTA Column */
+.three-r-cta-column {
+  display: flex;
+}
+
+.three-r-cta-banner-card {
+  width: 100%;
+  background: linear-gradient(135deg, #003D25 0%, #07552F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.75rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.three-r-cta-image-wrap {
+  width: 100px;
+  height: 72px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.three-r-cta-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.three-r-cta-text-wrap {
+  flex: 1;
+}
+
+.three-r-cta-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.three-r-cta-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.three-r-cta-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9EC;
+  color: #003D25;
+}
+
+/* ==========================================================================
+   SECTION 5: RECOMMENDED INTERNAL LINKS (4 Buttons)
+   ========================================================================== */
+.three-r-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.three-r-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.three-r-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.three-r-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.three-r-links-icon {
+  color: #D49A00;
+}
+
+.three-r-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.three-r-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #101820;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.45rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.three-r-link-pill-icon {
+  color: #07552F;
+}
+
+.three-r-link-pill:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.2);
+}
+
+.three-r-link-pill:hover .three-r-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .three-r-stages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .three-r-faq-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .three-r-banner-card {
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem;
+  }
+
+  .three-r-banner-divider,
+  .three-r-banner-leaves-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .three-r-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .three-r-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .three-r-journey-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .three-r-pill-frame {
+    max-width: 100%;
+  }
+
+  .three-r-banner-card {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .three-r-banner-image-wrap {
+    margin: 0 auto;
+  }
+
+  .three-r-banner-header {
+    justify-content: center;
+  }
+
+  .three-r-cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .three-r-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .three-r-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

@@ -1,0 +1,906 @@
+/* ==========================================================================
+   Ozone Therapy Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.ozone-page {
+  background-color: #FFF9ED;
+  color: #111C19;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.ozone-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.ozone-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ozone-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.ozone-breadcrumb-item a {
+  color: #064E2B;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.ozone-breadcrumb-item a:hover {
+  color: #003D24;
+}
+
+.ozone-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ozone-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.ozone-hero-section {
+  padding: 0.75rem 0 2rem;
+}
+
+.ozone-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.ozone-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ozone-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.6rem, 4.2vw, 3.8rem);
+  font-weight: 400;
+  color: #111C19;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.ozone-hero-title-accent {
+  color: #064E2B;
+}
+
+.ozone-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 240px;
+  margin: 0.25rem 0 1.5rem;
+  color: #C58A00;
+}
+
+.ozone-hero-divider::before,
+.ozone-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+}
+
+.ozone-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #064E2B;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(6, 78, 43, 0.25);
+  transition: all 0.25s ease;
+}
+
+.ozone-hero-cta:hover {
+  background-color: #003D24;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(6, 78, 43, 0.35);
+  color: #FFFFFF;
+}
+
+.ozone-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ozone-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid #C58A00;
+  box-shadow: 0 10px 30px rgba(6, 78, 43, 0.12);
+  background-color: #FFFFFF;
+}
+
+.ozone-hero-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 3: UNDERSTANDING OZONE-BASED WELLNESS SERVICES
+   ========================================================================== */
+.ozone-understanding-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.ozone-understanding-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.ozone-understanding-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  font-weight: 400;
+  color: #111C19;
+  line-height: 1.25;
+  margin: 0 0 1.25rem 0;
+}
+
+.ozone-understanding-heading-accent {
+  color: #064E2B;
+}
+
+.ozone-understanding-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ozone-understanding-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4A554F;
+  margin: 0;
+}
+
+.ozone-understanding-visual {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.ozone-understanding-frame {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 2px solid #C58A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 43, 0.12);
+  background-color: #003D24;
+}
+
+.ozone-understanding-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 4: OZONE SERVICES AT RBN
+   ========================================================================== */
+.ozone-services-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.ozone-section-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.ozone-section-title-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.7;
+}
+
+.ozone-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.7rem, 2.5vw, 2.2rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ozone-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.35rem;
+}
+
+.ozone-service-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.ozone-service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(6, 78, 43, 0.12);
+  border-color: #C58A00;
+}
+
+.ozone-service-card-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  background-color: #E8F2D9;
+  overflow: hidden;
+}
+
+.ozone-service-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ozone-service-card-body {
+  padding: 1.15rem 1.15rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ozone-service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.ozone-service-card-icon-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #E8F2D9;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ozone-service-card-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.ozone-service-card-text {
+  font-size: 0.83rem;
+  line-height: 1.6;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 5: WHY CONSULTATION MATTERS
+   ========================================================================== */
+.ozone-consult-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.ozone-consult-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.ozone-consult-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.ozone-consult-pill-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #C58A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 43, 0.1);
+  background-color: #FFFFFF;
+}
+
+.ozone-consult-img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  display: block;
+}
+
+.ozone-consult-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.ozone-consult-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.ozone-consult-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  white-space: nowrap;
+}
+
+.ozone-consult-icon {
+  color: #C58A00;
+}
+
+.ozone-consult-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.ozone-consult-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 6: WHAT TO ASK BEFORE PROCEEDING
+   ========================================================================== */
+.ozone-questions-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.ozone-questions-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.ozone-question-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 16px;
+  padding: 1.35rem 0.85rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+.ozone-question-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(6, 78, 43, 0.08);
+  border-color: #C58A00;
+}
+
+.ozone-question-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.9rem;
+  flex-shrink: 0;
+}
+
+.ozone-question-text {
+  font-size: 0.82rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #111C19;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 7: IMPORTANT SAFETY MESSAGE BANNER
+   ========================================================================== */
+.ozone-safety-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.ozone-safety-banner {
+  background: linear-gradient(135deg, #003D24 0%, #064E2B 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.6rem 2rem;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 8px 26px rgba(0, 61, 36, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.ozone-safety-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.ozone-safety-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  min-width: 140px;
+}
+
+.ozone-safety-divider {
+  width: 1px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.ozone-safety-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #E2EDE3;
+  margin: 0;
+}
+
+.ozone-safety-herbs-wrap {
+  width: 90px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ozone-safety-herbs-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 8: FAQ & ENQUIRE CTA ROW
+   ========================================================================== */
+.ozone-faq-cta-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.ozone-faq-cta-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* FAQ Column */
+.ozone-faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.ozone-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.ozone-faq-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.ozone-faq-title-icon {
+  color: #C58A00;
+}
+
+.ozone-faq-header-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.ozone-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.ozone-faq-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ozone-faq-item:hover {
+  border-color: #C58A00;
+}
+
+.ozone-faq-item.active {
+  border-color: #064E2B;
+  box-shadow: 0 4px 14px rgba(6, 78, 43, 0.08);
+}
+
+.ozone-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #111C19;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.ozone-faq-toggle-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.ozone-faq-answer {
+  padding: 0 1.15rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4A554F;
+  border-top: 1px solid #F0E9DA;
+  padding-top: 0.75rem;
+  margin: 0;
+}
+
+/* CTA Column */
+.ozone-cta-column {
+  display: flex;
+}
+
+.ozone-cta-banner-card {
+  width: 100%;
+  background: linear-gradient(135deg, #003D24 0%, #064E2B 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.75rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 36, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.ozone-cta-stones-wrap {
+  width: 90px;
+  height: 70px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ozone-cta-stones-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.ozone-cta-text-wrap {
+  flex: 1;
+}
+
+.ozone-cta-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.ozone-cta-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.ozone-cta-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9ED;
+  color: #003D24;
+}
+
+/* ==========================================================================
+   SECTION 9: RECOMMENDED INTERNAL LINKS
+   ========================================================================== */
+.ozone-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.ozone-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.ozone-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+}
+
+.ozone-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.ozone-links-icon {
+  color: #C58A00;
+}
+
+.ozone-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.ozone-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #111C19;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.ozone-link-pill-icon {
+  color: #064E2B;
+}
+
+.ozone-link-pill:hover {
+  background-color: #064E2B;
+  color: #FFFFFF;
+  border-color: #064E2B;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(6, 78, 43, 0.2);
+}
+
+.ozone-link-pill:hover .ozone-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .ozone-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ozone-questions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ozone-faq-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ozone-safety-banner {
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .ozone-safety-divider,
+  .ozone-safety-herbs-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .ozone-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ozone-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .ozone-understanding-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ozone-consult-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .ozone-consult-image-wrap {
+    justify-content: center;
+  }
+
+  .ozone-questions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ozone-safety-banner {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .ozone-safety-icon-wrap {
+    margin: 0 auto;
+  }
+
+  .ozone-safety-title {
+    text-align: center;
+  }
+
+  .ozone-cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .ozone-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ozone-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ozone-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ozone-questions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

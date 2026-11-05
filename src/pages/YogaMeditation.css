@@ -1,0 +1,922 @@
+/* ==========================================================================
+   Yoga & Meditation Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.yoga-page {
+  background-color: #FFF9ED;
+  color: #111C19;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.yoga-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.yoga-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.yoga-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.yoga-breadcrumb-item a {
+  color: #064E2B;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.yoga-breadcrumb-item a:hover {
+  color: #003D24;
+}
+
+.yoga-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.yoga-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.yoga-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.yoga-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.yoga-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.yoga-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.6rem, 4.2vw, 3.8rem);
+  font-weight: 400;
+  color: #111C19;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.yoga-hero-title-accent {
+  color: #064E2B;
+}
+
+.yoga-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.5rem;
+  color: #C58A00;
+}
+
+.yoga-hero-divider::before,
+.yoga-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+}
+
+.yoga-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #064E2B;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(6, 78, 43, 0.25);
+  transition: all 0.25s ease;
+}
+
+.yoga-hero-cta:hover {
+  background-color: #003D24;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(6, 78, 43, 0.35);
+  color: #FFFFFF;
+}
+
+.yoga-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yoga-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #C58A00;
+  box-shadow: 0 10px 30px rgba(6, 78, 43, 0.12);
+  background-color: #FFFFFF;
+}
+
+.yoga-hero-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 2: YOGA AS PART OF EVERYDAY WELLNESS
+   ========================================================================== */
+.yoga-everyday-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.yoga-everyday-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.yoga-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.15rem;
+}
+
+.yoga-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.yoga-section-title-accent {
+  color: #064E2B;
+}
+
+.yoga-section-title-icon {
+  color: #064E2B;
+}
+
+.yoga-section-gold-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.yoga-everyday-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+.yoga-everyday-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.yoga-everyday-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #C58A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 43, 0.1);
+  background-color: #FFFFFF;
+}
+
+.yoga-everyday-img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 3: MEDITATION & RELAXATION
+   ========================================================================== */
+.yoga-meditation-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.yoga-meditation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.yoga-meditation-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.yoga-meditation-pill-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #C58A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 43, 0.1);
+  background-color: #FFFFFF;
+}
+
+.yoga-meditation-img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  display: block;
+}
+
+.yoga-meditation-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.yoga-meditation-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: PROGRAMS MAY INCLUDE
+   ========================================================================== */
+.yoga-programs-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.yoga-centered-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.yoga-centered-title-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.7;
+}
+
+.yoga-centered-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.yoga-programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.35rem;
+}
+
+.yoga-program-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.yoga-program-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(6, 78, 43, 0.08);
+  border-color: #C58A00;
+}
+
+.yoga-program-card-image-wrap {
+  width: 120px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: #E8F2D9;
+}
+
+.yoga-program-card-img {
+  width: 100%;
+  height: 100%;
+  min-height: 85px;
+  object-fit: cover;
+  display: block;
+}
+
+.yoga-program-card-body {
+  padding: 1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.yoga-program-card-icon {
+  color: #C58A00;
+}
+
+.yoga-program-card-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #111C19;
+  margin: 0;
+}
+
+/* Wide additional card */
+.yoga-program-wide-card-wrap {
+  margin-top: 1.35rem;
+  display: flex;
+  justify-content: center;
+}
+
+.yoga-program-wide-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  max-width: 620px;
+  width: 100%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.yoga-program-wide-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(6, 78, 43, 0.08);
+  border-color: #C58A00;
+}
+
+.yoga-program-wide-image-wrap {
+  width: 160px;
+  height: 65px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: #E8F2D9;
+}
+
+.yoga-program-wide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.yoga-program-wide-body {
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex: 1;
+}
+
+.yoga-program-wide-title {
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #111C19;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 5: A PERSONALISED STARTING POINT
+   ========================================================================== */
+.yoga-starting-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.yoga-starting-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.yoga-starting-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.yoga-starting-pill-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #C58A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 43, 0.1);
+  background-color: #FFFFFF;
+}
+
+.yoga-starting-img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  display: block;
+}
+
+.yoga-starting-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.yoga-starting-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 6: YOGA WITHIN RBN PROGRAMS BANNER
+   ========================================================================== */
+.yoga-rbn-banner-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.yoga-rbn-banner {
+  background: linear-gradient(135deg, #003D24 0%, #064E2B 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.6rem 2rem;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 8px 26px rgba(0, 61, 36, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.yoga-rbn-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.yoga-rbn-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  min-width: 140px;
+}
+
+.yoga-rbn-divider {
+  width: 1px;
+  height: 56px;
+  background-color: rgba(255, 255, 255, 0.25);
+  flex-shrink: 0;
+}
+
+.yoga-rbn-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #E2EDE3;
+  margin: 0;
+}
+
+.yoga-rbn-stones-wrap {
+  width: 100px;
+  height: 76px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.yoga-rbn-stones-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 7: FAQ & ENQUIRE ABOUT YOGA & MEDITATION CTA
+   ========================================================================== */
+.yoga-faq-cta-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.yoga-faq-cta-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* FAQ Column */
+.yoga-faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.yoga-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.yoga-faq-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.yoga-faq-title-icon {
+  color: #C58A00;
+}
+
+.yoga-faq-header-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.yoga-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.yoga-faq-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.yoga-faq-item:hover {
+  border-color: #C58A00;
+}
+
+.yoga-faq-item.active {
+  border-color: #064E2B;
+  box-shadow: 0 4px 14px rgba(6, 78, 43, 0.08);
+}
+
+.yoga-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #111C19;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.yoga-faq-toggle-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.yoga-faq-answer {
+  padding: 0 1.15rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4A554F;
+  border-top: 1px solid #F0E9DA;
+  padding-top: 0.75rem;
+  margin: 0;
+}
+
+/* CTA Column */
+.yoga-cta-column {
+  display: flex;
+}
+
+.yoga-cta-banner-card {
+  width: 100%;
+  background: linear-gradient(135deg, #003D24 0%, #064E2B 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.75rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 36, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.yoga-cta-lotus-wrap {
+  width: 100px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.yoga-cta-lotus-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.yoga-cta-text-wrap {
+  flex: 1;
+}
+
+.yoga-cta-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.yoga-cta-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #064E2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.yoga-cta-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9ED;
+  color: #003D24;
+}
+
+/* ==========================================================================
+   SECTION 8: RECOMMENDED INTERNAL LINKS (4 Buttons)
+   ========================================================================== */
+.yoga-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.yoga-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.yoga-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D4AF37;
+  opacity: 0.6;
+}
+
+.yoga-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #111C19;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.yoga-links-icon {
+  color: #C58A00;
+}
+
+.yoga-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.yoga-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #111C19;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.45rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.yoga-link-pill-icon {
+  color: #064E2B;
+}
+
+.yoga-link-pill:hover {
+  background-color: #064E2B;
+  color: #FFFFFF;
+  border-color: #064E2B;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(6, 78, 43, 0.2);
+}
+
+.yoga-link-pill:hover .yoga-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .yoga-programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .yoga-faq-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-rbn-banner {
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .yoga-rbn-divider,
+  .yoga-rbn-stones-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .yoga-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .yoga-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .yoga-everyday-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .yoga-everyday-visual {
+    order: -1;
+  }
+
+  .yoga-meditation-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .yoga-starting-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .yoga-programs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .yoga-program-wide-card {
+    flex-direction: column;
+  }
+
+  .yoga-program-wide-image-wrap {
+    width: 100%;
+    height: 120px;
+  }
+
+  .yoga-rbn-banner {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .yoga-rbn-icon-wrap {
+    margin: 0 auto;
+  }
+
+  .yoga-rbn-title {
+    text-align: center;
+  }
+
+  .yoga-cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .yoga-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .yoga-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

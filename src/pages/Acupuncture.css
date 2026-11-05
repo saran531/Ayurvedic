@@ -1,0 +1,904 @@
+/* ==========================================================================
+   Acupuncture Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.acu-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.acu-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.acu-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.acu-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.acu-breadcrumb-item a {
+  color: #064E2D;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.acu-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.acu-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.acu-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.acu-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.acu-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.acu-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.acu-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.8rem, 4.4vw, 4rem);
+  font-weight: 400;
+  color: #101820;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.acu-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.5rem;
+  color: #D49A00;
+}
+
+.acu-hero-divider::before,
+.acu-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.acu-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #064E2D;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(6, 78, 45, 0.25);
+  transition: all 0.25s ease;
+}
+
+.acu-hero-cta:hover {
+  background-color: #003D25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(6, 78, 45, 0.35);
+  color: #FFFFFF;
+}
+
+.acu-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.acu-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 10px 30px rgba(6, 78, 45, 0.12);
+  background-color: #FFFFFF;
+}
+
+.acu-hero-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 2: WHAT IS ACUPUNCTURE?
+   ========================================================================== */
+.acu-whatis-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.acu-whatis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.acu-whatis-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.acu-whatis-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 45, 0.1);
+  background-color: #FFFFFF;
+}
+
+.acu-whatis-img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  display: block;
+}
+
+.acu-whatis-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.acu-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.acu-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.acu-section-title-icon {
+  color: #064E2D;
+}
+
+.acu-section-gold-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.acu-whatis-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 3: RBN’S CONSULTATION-LED APPROACH
+   ========================================================================== */
+.acu-consult-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.acu-consult-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.acu-consult-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.acu-consult-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 45, 0.1);
+  background-color: #FFFFFF;
+}
+
+.acu-consult-img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  display: block;
+}
+
+.acu-consult-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.acu-consult-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: WHAT TO EXPECT (4 Process Cards)
+   ========================================================================== */
+.acu-expect-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.acu-centered-title-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.acu-centered-title-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.7;
+}
+
+.acu-centered-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.acu-process-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  position: relative;
+}
+
+.acu-process-card-wrap {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.acu-process-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  padding: 1.35rem 1.15rem 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.acu-process-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(6, 78, 45, 0.08);
+  border-color: #D49A00;
+}
+
+.acu-process-number-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #D49A00;
+  color: #FFFFFF;
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(212, 154, 0, 0.35);
+}
+
+.acu-process-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #064E2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.25rem 0 0.85rem;
+}
+
+.acu-process-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0 0 0.5rem 0;
+}
+
+.acu-process-desc {
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: #4A554F;
+  margin: 0;
+}
+
+.acu-process-arrow {
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #D49A00;
+  z-index: 2;
+  font-size: 1.25rem;
+}
+
+/* ==========================================================================
+   SECTION 5: SAFETY & HYGIENE BANNER
+   ========================================================================== */
+.acu-safety-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.acu-safety-banner {
+  background: linear-gradient(135deg, #003D25 0%, #064E2D 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.6rem 2rem;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 8px 26px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.acu-safety-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  flex-shrink: 0;
+}
+
+.acu-safety-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.acu-safety-divider {
+  width: 1px;
+  height: 56px;
+  background-color: rgba(212, 154, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.acu-safety-statements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.acu-safety-statement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: #E2EDE3;
+}
+
+.acu-safety-check-icon {
+  color: #D49A00;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.acu-safety-deco-leaves {
+  color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 6: ACUPUNCTURE WITHIN INTEGRATED WELLNESS
+   ========================================================================== */
+.acu-integrated-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.acu-integrated-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.acu-integrated-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.acu-integrated-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(6, 78, 45, 0.1);
+  background-color: #FFFFFF;
+}
+
+.acu-integrated-img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  display: block;
+}
+
+.acu-integrated-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.acu-integrated-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 7: FAQ & BOOK AN ACUPUNCTURE CONSULTATION CTA
+   ========================================================================== */
+.acu-faq-cta-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.acu-faq-cta-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* FAQ Column */
+.acu-faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.acu-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.acu-faq-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.acu-faq-title-icon {
+  color: #D49A00;
+}
+
+.acu-faq-header-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.acu-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.acu-faq-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.acu-faq-item:hover {
+  border-color: #D49A00;
+}
+
+.acu-faq-item.active {
+  border-color: #064E2D;
+  box-shadow: 0 4px 14px rgba(6, 78, 45, 0.08);
+}
+
+.acu-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #101820;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.acu-faq-toggle-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #064E2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.acu-faq-answer {
+  padding: 0 1.15rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4A554F;
+  border-top: 1px solid #F0E9DA;
+  padding-top: 0.75rem;
+  margin: 0;
+}
+
+/* CTA Column */
+.acu-cta-column {
+  display: flex;
+}
+
+.acu-cta-banner-card {
+  width: 100%;
+  background: linear-gradient(135deg, #003D25 0%, #064E2D 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.75rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.acu-cta-lotus-wrap {
+  width: 100px;
+  height: 64px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.acu-cta-lotus-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.acu-cta-text-wrap {
+  flex: 1;
+}
+
+.acu-cta-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.acu-cta-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #064E2D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.acu-cta-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9EC;
+  color: #003D25;
+}
+
+/* ==========================================================================
+   SECTION 8: RECOMMENDED INTERNAL LINKS (3 Buttons)
+   ========================================================================== */
+.acu-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.acu-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.acu-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.acu-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.acu-links-icon {
+  color: #D49A00;
+}
+
+.acu-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.acu-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #101820;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.acu-link-pill-icon {
+  color: #064E2D;
+}
+
+.acu-link-pill:hover {
+  background-color: #064E2D;
+  color: #FFFFFF;
+  border-color: #064E2D;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(6, 78, 45, 0.2);
+}
+
+.acu-link-pill:hover .acu-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .acu-process-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .acu-process-arrow {
+    display: none;
+  }
+
+  .acu-faq-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .acu-safety-banner {
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .acu-safety-divider,
+  .acu-safety-deco-leaves {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .acu-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .acu-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .acu-whatis-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .acu-whatis-image-wrap {
+    justify-content: center;
+  }
+
+  .acu-consult-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .acu-consult-image-wrap {
+    justify-content: center;
+  }
+
+  .acu-integrated-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .acu-integrated-image-wrap {
+    justify-content: center;
+  }
+
+  .acu-process-row {
+    grid-template-columns: 1fr;
+  }
+
+  .acu-safety-banner {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .acu-safety-icon-wrap {
+    margin: 0 auto;
+  }
+
+  .acu-safety-title {
+    text-align: center;
+  }
+
+  .acu-safety-statement-item {
+    text-align: left;
+  }
+
+  .acu-cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .acu-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .acu-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

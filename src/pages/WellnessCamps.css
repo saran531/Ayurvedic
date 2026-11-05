@@ -1,0 +1,656 @@
+/* ==========================================================================
+   Wellness Camps Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.camps-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.camps-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.camps-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.camps-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.camps-breadcrumb-item a {
+  color: #07552F;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.camps-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.camps-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.camps-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.camps-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.camps-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.camps-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.camps-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 400;
+  color: #07552F;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.camps-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.5rem;
+  color: #D49A00;
+}
+
+.camps-hero-divider::before,
+.camps-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.camps-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #07552F;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.25);
+  transition: all 0.25s ease;
+}
+
+.camps-hero-cta:hover {
+  background-color: #003D25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 85, 47, 0.35);
+  color: #FFFFFF;
+}
+
+.camps-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.camps-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 10px 30px rgba(7, 85, 47, 0.12);
+  background-color: #FFFFFF;
+}
+
+.camps-hero-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 1: INTRODUCTION (Take Focused Time for Your Wellbeing)
+   ========================================================================== */
+.camps-intro-section {
+  padding: 1.5rem 0 2rem;
+}
+
+.camps-intro-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.camps-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.camps-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.camps-section-icon {
+  color: #07552F;
+}
+
+.camps-section-gold-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.camps-section-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+.camps-pill-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(7, 85, 47, 0.1);
+  background-color: #FFFFFF;
+}
+
+.camps-pill-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 2: WELLNESS CAMP CARDS (6 Cards in 2 Columns x 3 Rows)
+   ========================================================================== */
+.camps-cards-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.camps-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.35rem;
+}
+
+.camps-service-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.camps-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(7, 85, 47, 0.08);
+  border-color: #D49A00;
+}
+
+.camps-service-card-image-wrap {
+  width: 140px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: #E8F2D9;
+}
+
+.camps-service-card-img {
+  width: 100%;
+  height: 100%;
+  min-height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.camps-service-card-body {
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.camps-service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.45rem;
+}
+
+.camps-card-icon {
+  color: #07552F;
+}
+
+.camps-service-card-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.camps-service-card-text {
+  font-size: 0.83rem;
+  line-height: 1.58;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 3: UPCOMING CAMP MODULE
+   ========================================================================== */
+.camps-module-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.camps-module-container {
+  background-color: #FFFDF8;
+  border: 1px solid #E6DECA;
+  border-radius: 20px;
+  padding: 1.75rem 1.85rem;
+  box-shadow: 0 4px 18px rgba(7, 85, 47, 0.05);
+}
+
+.camps-module-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+}
+
+.camps-module-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.camps-module-icon {
+  color: #D49A00;
+}
+
+.camps-module-gold-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.camps-module-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.camps-module-image-wrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.camps-module-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.camps-module-info-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  background-color: #F8F5EC;
+  border-radius: 14px;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid #EBE4D5;
+}
+
+.camps-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.camps-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.86rem;
+  color: #2D3A31;
+  font-weight: 500;
+}
+
+.camps-info-icon {
+  color: #D49A00;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: UPCOMING CAMPS FULL-WIDTH CTA BANNER
+   ========================================================================== */
+.camps-banner-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.camps-full-banner {
+  background: linear-gradient(135deg, #003D25 0%, #07552F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.camps-banner-left-wrap {
+  width: 110px;
+  height: 72px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.camps-banner-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.camps-banner-divider {
+  width: 1px;
+  height: 56px;
+  background-color: rgba(212, 154, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.camps-banner-center {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.camps-banner-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  text-align: left;
+}
+
+.camps-banner-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.camps-banner-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9EC;
+  color: #003D25;
+}
+
+.camps-banner-right-wrap {
+  width: 114px;
+  height: 72px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 5: RECOMMENDED INTERNAL LINKS (4 Buttons)
+   ========================================================================== */
+.camps-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.camps-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.camps-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.camps-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.camps-links-icon {
+  color: #D49A00;
+}
+
+.camps-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.camps-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #101820;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.45rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.camps-link-pill-icon {
+  color: #07552F;
+}
+
+.camps-link-pill:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.2);
+}
+
+.camps-link-pill:hover .camps-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .camps-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camps-module-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .camps-full-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .camps-banner-divider {
+    display: none;
+  }
+
+  .camps-banner-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .camps-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .camps-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .camps-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .camps-pill-frame {
+    max-width: 100%;
+  }
+
+  .camps-service-card {
+    flex-direction: column;
+  }
+
+  .camps-service-card-image-wrap {
+    width: 100%;
+    height: 140px;
+  }
+
+  .camps-module-info-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .camps-full-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .camps-banner-center {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .camps-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .camps-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

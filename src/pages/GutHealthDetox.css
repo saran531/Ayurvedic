@@ -1,0 +1,775 @@
+/* ==========================================================================
+   Gut Health & Detox Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.gut-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.gut-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.gut-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gut-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.gut-breadcrumb-item a {
+  color: #07552F;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.gut-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.gut-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.gut-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.gut-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.gut-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.gut-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gut-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 400;
+  color: #07552F;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.gut-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.5rem;
+  color: #D49A00;
+}
+
+.gut-hero-divider::before,
+.gut-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.gut-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #07552F;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.25);
+  transition: all 0.25s ease;
+}
+
+.gut-hero-cta:hover {
+  background-color: #003D25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 85, 47, 0.35);
+  color: #FFFFFF;
+}
+
+.gut-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gut-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 10px 30px rgba(7, 85, 47, 0.12);
+  background-color: #FFFFFF;
+}
+
+.gut-hero-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   GENERIC SECTION HEADERS & PILL FRAMES
+   ========================================================================== */
+.gut-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.85rem;
+}
+
+.gut-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.gut-section-icon {
+  color: #07552F;
+}
+
+.gut-section-gold-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.gut-section-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+.gut-pill-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(7, 85, 47, 0.1);
+  background-color: #FFFFFF;
+}
+
+.gut-pill-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 1: UNDERSTANDING GUT WELLNESS
+   ========================================================================== */
+.gut-understanding-section {
+  padding: 1.5rem 0 2rem;
+}
+
+.gut-understanding-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+/* ==========================================================================
+   SECTION 2: RBN’S LIFESTYLE-FOCUSED APPROACH
+   ========================================================================== */
+.gut-approach-section {
+  padding: 1.5rem 0 2rem;
+}
+
+.gut-approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+/* ==========================================================================
+   SECTION 3: WELLNESS SERVICE CARDS (4 Cards in 2x2 Grid)
+   ========================================================================== */
+.gut-cards-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.gut-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.35rem;
+}
+
+.gut-service-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.gut-service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(7, 85, 47, 0.08);
+  border-color: #D49A00;
+}
+
+.gut-service-card-image-wrap {
+  width: 140px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: #E8F2D9;
+}
+
+.gut-service-card-img {
+  width: 100%;
+  height: 100%;
+  min-height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.gut-service-card-body {
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.gut-service-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.45rem;
+}
+
+.gut-card-icon {
+  color: #07552F;
+}
+
+.gut-service-card-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.gut-service-card-text {
+  font-size: 0.83rem;
+  line-height: 1.58;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: WHAT ‘DETOX’ MEANS ON THIS WEBSITE BANNER
+   ========================================================================== */
+.gut-banner-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.gut-detox-banner {
+  background: linear-gradient(135deg, #003D25 0%, #07552F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.6rem 2rem;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  box-shadow: 0 8px 26px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.gut-banner-image-wrap {
+  width: 115px;
+  height: 70px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.gut-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gut-banner-divider {
+  width: 1px;
+  height: 56px;
+  background-color: rgba(212, 154, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.gut-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.gut-banner-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.gut-banner-text {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #E2EDE3;
+  margin: 0;
+}
+
+.gut-banner-leaves-wrap {
+  color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 5: HOW PROGRESS IS REVIEWED
+   ========================================================================== */
+.gut-progress-section {
+  padding: 1.5rem 0 2rem;
+}
+
+.gut-progress-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+/* ==========================================================================
+   SECTION 6: FAQ & ENQUIRE CTA ROW
+   ========================================================================== */
+.gut-faq-cta-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.gut-faq-cta-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* FAQ Column */
+.gut-faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gut-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.gut-faq-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.gut-faq-title-icon {
+  color: #D49A00;
+}
+
+.gut-faq-header-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.gut-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.gut-faq-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gut-faq-item:hover {
+  border-color: #D49A00;
+}
+
+.gut-faq-item.active {
+  border-color: #07552F;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.08);
+}
+
+.gut-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #101820;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.gut-faq-toggle-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.gut-faq-answer {
+  padding: 0 1.15rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4A554F;
+  border-top: 1px solid #F0E9DA;
+  padding-top: 0.75rem;
+  margin: 0;
+}
+
+/* CTA Column */
+.gut-cta-column {
+  display: flex;
+}
+
+.gut-cta-banner-card {
+  width: 100%;
+  background: linear-gradient(135deg, #003D25 0%, #07552F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.75rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.gut-cta-image-wrap {
+  width: 95px;
+  height: 68px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.gut-cta-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gut-cta-text-wrap {
+  flex: 1;
+}
+
+.gut-cta-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.gut-cta-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.gut-cta-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9EC;
+  color: #003D25;
+}
+
+/* ==========================================================================
+   SECTION 7: RECOMMENDED INTERNAL LINKS (4 Buttons)
+   ========================================================================== */
+.gut-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.gut-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.gut-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.gut-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.gut-links-icon {
+  color: #D49A00;
+}
+
+.gut-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.gut-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #101820;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.45rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.gut-link-pill-icon {
+  color: #07552F;
+}
+
+.gut-link-pill:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.2);
+}
+
+.gut-link-pill:hover .gut-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .gut-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gut-faq-cta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gut-detox-banner {
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+  }
+
+  .gut-banner-divider,
+  .gut-banner-leaves-wrap {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .gut-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .gut-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .gut-understanding-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .gut-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .gut-approach-image-wrap {
+    order: -1;
+  }
+
+  .gut-progress-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .gut-progress-image-wrap {
+    order: -1;
+  }
+
+  .gut-pill-frame {
+    max-width: 100%;
+  }
+
+  .gut-service-card {
+    flex-direction: column;
+  }
+
+  .gut-service-card-image-wrap {
+    width: 100%;
+    height: 140px;
+  }
+
+  .gut-detox-banner {
+    grid-template-columns: 1fr;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .gut-banner-image-wrap {
+    margin: 0 auto;
+  }
+
+  .gut-banner-title {
+    text-align: center;
+  }
+
+  .gut-cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .gut-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .gut-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

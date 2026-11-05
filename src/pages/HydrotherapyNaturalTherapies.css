@@ -1,0 +1,702 @@
+/* ==========================================================================
+   Hydrotherapy & Natural Therapies Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.hydro-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.hydro-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.hydro-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hydro-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hydro-breadcrumb-item a {
+  color: #07552F;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.hydro-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.hydro-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hydro-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hydro-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.hydro-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hydro-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hydro-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-weight: 400;
+  color: #07552F;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.hydro-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.5rem;
+  color: #D49A00;
+}
+
+.hydro-hero-divider::before,
+.hydro-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.hydro-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #07552F;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.25);
+  transition: all 0.25s ease;
+}
+
+.hydro-hero-cta:hover {
+  background-color: #003D25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 85, 47, 0.35);
+  color: #FFFFFF;
+}
+
+.hydro-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hydro-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 10px 30px rgba(7, 85, 47, 0.12);
+  background-color: #FFFFFF;
+}
+
+.hydro-hero-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 2: NATURE-BASED THERAPIES AT RBN
+   ========================================================================== */
+.hydro-nature-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.hydro-nature-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hydro-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.hydro-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.6rem, 2.3vw, 2.15rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.hydro-section-title-icon {
+  color: #07552F;
+}
+
+.hydro-section-gold-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.hydro-nature-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.hydro-nature-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+.hydro-nature-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.hydro-nature-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(7, 85, 47, 0.1);
+  background-color: #FFFFFF;
+}
+
+.hydro-nature-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 3: NATURAL THERAPY SERVICE CARDS (5 Cards)
+   ========================================================================== */
+.hydro-cards-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.hydro-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.35rem;
+}
+
+.hydro-therapy-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.hydro-therapy-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(7, 85, 47, 0.08);
+  border-color: #D49A00;
+}
+
+.hydro-therapy-card-image-wrap {
+  width: 140px;
+  flex-shrink: 0;
+  position: relative;
+  background-color: #E8F2D9;
+}
+
+.hydro-therapy-card-img {
+  width: 100%;
+  height: 100%;
+  min-height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.hydro-therapy-card-body {
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.hydro-therapy-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.5rem;
+}
+
+.hydro-therapy-card-icon {
+  color: #07552F;
+}
+
+.hydro-therapy-card-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.hydro-therapy-card-text {
+  font-size: 0.83rem;
+  line-height: 1.58;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 4: HOW RBN CHOOSES A THERAPY
+   ========================================================================== */
+.hydro-chooses-section {
+  padding: 1.5rem 0 2.25rem;
+}
+
+.hydro-chooses-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2.75rem;
+  align-items: center;
+}
+
+.hydro-chooses-image-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hydro-chooses-frame {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 8px 24px rgba(7, 85, 47, 0.1);
+  background-color: #FFFFFF;
+}
+
+.hydro-chooses-img {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  display: block;
+}
+
+.hydro-chooses-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hydro-chooses-text {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SECTION 5: FAQ & DISCUSS NATURAL THERAPY OPTIONS CTA
+   ========================================================================== */
+.hydro-faq-cta-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.hydro-faq-cta-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+/* FAQ Column */
+.hydro-faq-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hydro-faq-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.hydro-faq-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.hydro-faq-title-icon {
+  color: #D49A00;
+}
+
+.hydro-faq-header-line {
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+  margin-left: 0.5rem;
+}
+
+.hydro-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hydro-faq-item {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hydro-faq-item:hover {
+  border-color: #D49A00;
+}
+
+.hydro-faq-item.active {
+  border-color: #07552F;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.08);
+}
+
+.hydro-faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.95rem 1.15rem;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: #101820;
+  font-size: 0.92rem;
+  font-weight: 600;
+  font-family: inherit;
+  gap: 1rem;
+}
+
+.hydro-faq-toggle-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #E8F2D9;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.hydro-faq-answer {
+  padding: 0 1.15rem 1rem;
+  font-size: 0.86rem;
+  line-height: 1.6;
+  color: #4A554F;
+  border-top: 1px solid #F0E9DA;
+  padding-top: 0.75rem;
+  margin: 0;
+}
+
+/* CTA Column */
+.hydro-cta-column {
+  display: flex;
+}
+
+.hydro-cta-banner-card {
+  width: 100%;
+  background: linear-gradient(135deg, #003D25 0%, #07552F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.75rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.hydro-cta-mortar-wrap {
+  width: 95px;
+  height: 68px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.hydro-cta-mortar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hydro-cta-text-wrap {
+  flex: 1;
+}
+
+.hydro-cta-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.hydro-cta-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: #07552F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.22s ease, background-color 0.22s ease;
+}
+
+.hydro-cta-arrow-btn:hover {
+  transform: scale(1.08);
+  background-color: #FFF9EC;
+  color: #003D25;
+}
+
+/* ==========================================================================
+   SECTION 6: RECOMMENDED INTERNAL LINKS (3 Buttons)
+   ========================================================================== */
+.hydro-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.hydro-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.hydro-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.hydro-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hydro-links-icon {
+  color: #D49A00;
+}
+
+.hydro-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hydro-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #101820;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.hydro-link-pill-icon {
+  color: #07552F;
+}
+
+.hydro-link-pill-icon.gold {
+  color: #D49A00;
+}
+
+.hydro-link-pill:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.2);
+}
+
+.hydro-link-pill:hover .hydro-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .hydro-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hydro-faq-cta-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .hydro-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hydro-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .hydro-nature-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hydro-nature-visual {
+    order: -1;
+  }
+
+  .hydro-chooses-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .hydro-chooses-image-wrap {
+    justify-content: center;
+  }
+
+  .hydro-therapy-card {
+    flex-direction: column;
+  }
+
+  .hydro-therapy-card-image-wrap {
+    width: 100%;
+    height: 140px;
+  }
+
+  .hydro-cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .hydro-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hydro-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

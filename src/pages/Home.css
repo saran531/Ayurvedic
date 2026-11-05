@@ -1,0 +1,1146 @@
+/* Home Page Styles - RBN AYUSH HEALTH CARE */
+
+.home-page {
+  background-color: var(--warm-cream);
+  color: var(--dark-text);
+  overflow-x: hidden;
+}
+
+/* Common Section Heading Styles */
+.section-eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted-gold);
+  margin-bottom: 0.4rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-weight: 600;
+  color: var(--dark-green);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  font-size: 0.92rem;
+  color: var(--secondary-text);
+  max-width: 600px;
+  line-height: 1.55;
+  margin-bottom: 1.75rem;
+}
+
+/* ==========================================================================
+   SECTION 3: HERO SECTION
+   ========================================================================== */
+.hero-section {
+  position: relative;
+  padding: 3rem 0 2.5rem;
+  background: radial-gradient(circle at 10% 20%, rgba(231, 237, 225, 0.45) 0%, transparent 60%),
+              radial-gradient(circle at 90% 80%, rgba(247, 243, 230, 0.6) 0%, transparent 60%);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--muted-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.hero-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.3rem, 4vw, 3.4rem);
+  font-weight: 600;
+  color: var(--dark-text);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.15rem;
+}
+
+.hero-heading-highlight {
+  color: var(--primary-green);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 0.96rem;
+  color: var(--secondary-text);
+  line-height: 1.65;
+  max-width: 530px;
+  margin-bottom: 1.75rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.btn-hero-primary {
+  background-color: var(--primary-green);
+  color: #FFFDF7 !important;
+  font-weight: 600;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  box-shadow: 0 4px 12px rgba(0, 85, 47, 0.2);
+  transition: all var(--transition-fast);
+}
+
+.btn-hero-primary:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-1px);
+}
+
+.btn-hero-outline {
+  background-color: #FFFFFF;
+  color: var(--primary-green);
+  border: 1.5px solid var(--primary-green);
+  font-weight: 600;
+  padding: 0.6rem 1.3rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-hero-outline:hover {
+  background-color: var(--light-sage);
+}
+
+.hero-location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--primary-green);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 0.25rem;
+  transition: gap var(--transition-fast);
+}
+
+.hero-location-link:hover {
+  gap: 0.6rem;
+}
+
+/* Hero Right Image */
+.hero-image-col {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 180px 180px 24px 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(7, 59, 37, 0.15);
+  border: 4px solid #FFFDF7;
+}
+
+.hero-main-img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-overlay-badge {
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  background: rgba(7, 59, 37, 0.88);
+  backdrop-filter: blur(6px);
+  color: #FFFDF7;
+  padding: 0.75rem 1.15rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--muted-gold);
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.hero-badge-title {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #e5c16e;
+  line-height: 1.15;
+}
+
+.hero-badge-sub {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: #cad8c4;
+}
+
+/* ==========================================================================
+   SECTION 4: TRUST & BENEFIT STRIP
+   ========================================================================== */
+.benefit-strip-section {
+  padding: 0.5rem 0 2.5rem;
+}
+
+.benefit-strip-card {
+  background-color: var(--ivory);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: 1.4rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.benefit-strip-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.benefit-strip-item:not(:last-child) {
+  border-right: 1px solid rgba(232, 224, 207, 0.6);
+  padding-right: 1.25rem;
+}
+
+.benefit-strip-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--light-sage);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 85, 47, 0.08);
+}
+
+.benefit-strip-title {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  line-height: 1.2;
+}
+
+.benefit-strip-sub {
+  font-size: 0.78rem;
+  color: var(--secondary-text);
+  margin-top: 2px;
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   SECTION 5: OUR THERAPIES
+   ========================================================================== */
+.therapies-section {
+  padding: 2.5rem 0 3.5rem;
+}
+
+.section-header-flex {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn-view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--border-color);
+  background-color: #FFFFFF;
+  color: var(--dark-green);
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.btn-view-all:hover {
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+  background-color: var(--light-sage);
+}
+
+.therapies-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+
+.therapy-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+  position: relative;
+}
+
+.therapy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--sage-green);
+}
+
+.therapy-card-thumb {
+  position: relative;
+  width: 100%;
+  height: 110px;
+  overflow: hidden;
+  background-color: #f0ebe0;
+}
+
+.therapy-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.therapy-card:hover .therapy-card-img {
+  transform: scale(1.05);
+}
+
+.therapy-card-icon-badge {
+  position: absolute;
+  bottom: -14px;
+  left: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  color: var(--primary-green);
+  border: 1.5px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.therapy-card-body {
+  padding: 1.25rem 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.therapy-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 0.35rem;
+}
+
+.therapy-card-desc {
+  font-size: 0.78rem;
+  color: var(--secondary-text);
+  line-height: 1.35;
+  margin-bottom: 0.85rem;
+  flex-grow: 1;
+}
+
+.therapy-card-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--primary-green);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: gap var(--transition-fast);
+}
+
+.therapy-card:hover .therapy-card-link {
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   SECTION 6: HOW YOUR WELLNESS JOURNEY WORKS
+   ========================================================================== */
+.journey-section {
+  padding: 3rem 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(231, 237, 225, 0.4) 100%);
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.journey-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.journey-image-col {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 2px solid #FFFDF7;
+}
+
+.journey-left-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.journey-steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+
+.journey-step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+.journey-step-badge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.journey-step-number {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: var(--muted-gold);
+  color: #FFFDF7;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.journey-step-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--border-color);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.journey-step-arrow {
+  position: absolute;
+  top: 18px;
+  right: -14px;
+  color: var(--sage-green);
+  font-size: 1.1rem;
+  pointer-events: none;
+}
+
+.journey-step-title {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 0.35rem;
+}
+
+.journey-step-desc {
+  font-size: 0.8rem;
+  color: var(--secondary-text);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   SECTION 7: SIRUMALAI RETREAT BANNER
+   ========================================================================== */
+.retreat-section {
+  padding: 3rem 0;
+}
+
+.retreat-banner {
+  background-color: var(--dark-green);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid rgba(199, 149, 36, 0.3);
+}
+
+.retreat-banner-image-wrap {
+  position: relative;
+  min-height: 280px;
+}
+
+.retreat-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.retreat-badge-emblem {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(7, 59, 37, 0.9);
+  border: 1.5px solid var(--muted-gold);
+  color: #FFFDF7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.retreat-banner-content {
+  padding: 2.5rem 2.75rem;
+  color: #FFFDF7;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.retreat-banner-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 2.3vw, 2.3rem);
+  font-weight: 600;
+  color: #FFFDF7;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.retreat-banner-desc {
+  font-size: 0.88rem;
+  color: #cad8c4;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+.retreat-banner-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn-retreat-white {
+  background-color: #FFFFFF;
+  color: var(--dark-green) !important;
+  font-weight: 600;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-retreat-white:hover {
+  background-color: #f2eee4;
+}
+
+.btn-retreat-outline {
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  color: #FFFDF7 !important;
+  font-weight: 500;
+  padding: 0.55rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  transition: all var(--transition-fast);
+}
+
+.btn-retreat-outline:hover {
+  border-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.retreat-benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.retreat-benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #e6ede2;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.retreat-benefit-item svg {
+  color: var(--muted-gold);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   SECTION 8: WHY CHOOSE RBN AYUSH HEALTH CARE?
+   ========================================================================== */
+.why-choose-section {
+  padding: 2.5rem 0 3.5rem;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.why-card {
+  background-color: var(--ivory);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform var(--transition-fast);
+}
+
+.why-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--sage-green);
+}
+
+.why-card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--light-sage);
+  color: var(--primary-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+}
+
+.why-card-title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark-green);
+}
+
+.why-card-desc {
+  font-size: 0.82rem;
+  color: var(--secondary-text);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   SECTION 9: TESTIMONIAL & CONSULTATION FORM
+   ========================================================================== */
+.social-proof-section {
+  padding: 3rem 0 3.5rem;
+  background-color: #f7f3e6;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.social-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2.5rem;
+  align-items: stretch;
+}
+
+/* Testimonial Card */
+.testimonial-card-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card {
+  background-color: var(--ivory);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.testimonial-quote-mark {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--muted-gold);
+  margin-bottom: -0.5rem;
+}
+
+.testimonial-text {
+  font-size: 0.98rem;
+  color: var(--dark-text);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.testimonial-user-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px dashed var(--border-color);
+  padding-top: 1.25rem;
+}
+
+.testimonial-user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.testimonial-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--muted-gold);
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--dark-green);
+}
+
+.testimonial-location {
+  font-size: 0.78rem;
+  color: var(--secondary-text);
+}
+
+.testimonial-rating {
+  color: #dfaa30;
+  font-size: 0.88rem;
+  letter-spacing: 0.1em;
+  margin-top: 2px;
+}
+
+.testimonial-nav-arrows {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--secondary-text);
+  font-size: 0.85rem;
+}
+
+.testimonial-nav-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: #FFFFFF;
+  color: var(--dark-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.testimonial-nav-btn:hover {
+  background: var(--light-sage);
+}
+
+/* Consultation Form Card */
+.consultation-form-card {
+  background-color: var(--ivory);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-heading {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 0.25rem;
+}
+
+.form-subtext {
+  font-size: 0.86rem;
+  color: var(--secondary-text);
+  margin-bottom: 1.4rem;
+}
+
+.consult-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--dark-text);
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  background-color: #FFFFFF;
+  color: var(--dark-text);
+  transition: border-color var(--transition-fast);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 2px rgba(0, 85, 47, 0.12);
+}
+
+.btn-form-submit {
+  width: 100%;
+  background-color: var(--primary-green);
+  color: #FFFDF7;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+  margin-top: 0.5rem;
+}
+
+.btn-form-submit:hover {
+  background-color: var(--dark-green);
+}
+
+/* ==========================================================================
+   SECTION 10 & 11: SPLIT ROW (LATEST INSIGHTS & FAQ)
+   ========================================================================== */
+.insights-faq-section {
+  padding: 3.5rem 0 4.5rem;
+}
+
+.insights-faq-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.75rem;
+  align-items: flex-start;
+}
+
+/* Insights Column */
+.insights-cards-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.insight-card-h {
+  background-color: var(--ivory);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.15rem;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.insight-card-h:hover {
+  transform: translateY(-2px);
+  border-color: var(--sage-green);
+}
+
+.insight-thumb {
+  width: 80px;
+  height: 75px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.insight-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.insight-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.35rem;
+}
+
+.tag-ayurveda {
+  background-color: var(--light-sage);
+  color: var(--dark-green);
+}
+
+.tag-yoga {
+  background-color: #fceecb;
+  color: #8c6310;
+}
+
+.tag-nutrition {
+  background-color: #faeed9;
+  color: #9c5c16;
+}
+
+.insight-title {
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  line-height: 1.25;
+  margin-bottom: 0.35rem;
+}
+
+.insight-link {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--primary-green);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* FAQ Column */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.faq-item {
+  background-color: var(--ivory);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.faq-item.active {
+  border-color: var(--primary-green);
+}
+
+.faq-question-btn {
+  width: 100%;
+  padding: 0.9rem 1.15rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark-green);
+  background: transparent;
+  cursor: pointer;
+}
+
+.faq-icon-arrow {
+  color: var(--primary-green);
+  transition: transform var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon-arrow {
+  transform: rotate(180deg);
+}
+
+.faq-answer-panel {
+  padding: 0 1.15rem 0.95rem;
+  font-size: 0.85rem;
+  color: var(--secondary-text);
+  line-height: 1.55;
+  border-top: 1px dashed rgba(232, 224, 207, 0.6);
+  padding-top: 0.65rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN RULES FOR HOME
+   ========================================================================== */
+@media (max-width: 1100px) {
+  .therapies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .retreat-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .retreat-banner-content {
+    grid-template-columns: 1fr;
+  }
+
+  .retreat-benefits-list {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group {
+    justify-content: center;
+  }
+
+  .benefit-strip-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefit-strip-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .journey-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .journey-steps-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .journey-step-arrow {
+    display: none;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .social-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .insights-faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-heading {
+    font-size: 2.1rem;
+  }
+
+  .benefit-strip-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .benefit-strip-item {
+    border-right: none !important;
+    padding-right: 0 !important;
+  }
+
+  .therapies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .journey-steps-row {
+    grid-template-columns: 1fr;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row-3col {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-card-h {
+    grid-template-columns: 1fr;
+  }
+
+  .insight-thumb {
+    width: 100%;
+    height: 120px;
+  }
+}
+

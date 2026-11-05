@@ -1,0 +1,634 @@
+/* ==========================================================================
+   Wellness Goals Page Styles - RBN AYUSH HEALTH CARE
+   Exact UI recreation based on reference screenshot
+   ========================================================================== */
+
+.goals-page {
+  background-color: #FFF9EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 2.5rem;
+}
+
+/* ==========================================================================
+   BREADCRUMB
+   ========================================================================== */
+.goals-breadcrumb-bar {
+  padding: 0.85rem 0 0.5rem;
+}
+
+.goals-breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.84rem;
+  color: #5C625B;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goals-breadcrumb-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.goals-breadcrumb-item a {
+  color: #07552F;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.goals-breadcrumb-item a:hover {
+  color: #003D25;
+}
+
+.goals-breadcrumb-separator {
+  color: #A8B99A;
+  display: inline-flex;
+  align-items: center;
+}
+
+.goals-breadcrumb-current {
+  color: #5C625B;
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.goals-hero-section {
+  padding: 0.75rem 0 2.25rem;
+}
+
+.goals-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.goals-hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.goals-hero-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.3rem, 3.8vw, 3.4rem);
+  font-weight: 400;
+  color: #07552F;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.5rem 0;
+}
+
+.goals-hero-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  margin: 0.35rem 0 1.25rem;
+  color: #D49A00;
+}
+
+.goals-hero-divider::before,
+.goals-hero-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.goals-hero-desc {
+  font-size: 0.94rem;
+  line-height: 1.68;
+  color: #4A554F;
+  margin: 0 0 1.5rem 0;
+}
+
+.goals-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #07552F;
+  color: #FFFFFF;
+  padding: 0.75rem 1.6rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(7, 85, 47, 0.25);
+  transition: all 0.25s ease;
+}
+
+.goals-hero-cta:hover {
+  background-color: #003D25;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(7, 85, 47, 0.35);
+  color: #FFFFFF;
+}
+
+.goals-hero-image-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.goals-hero-frame {
+  position: relative;
+  width: 100%;
+  max-width: 530px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 10px 30px rgba(7, 85, 47, 0.12);
+  background-color: #FFFFFF;
+}
+
+.goals-hero-img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================================================
+   SECTION 1: EXPLORE YOUR WELLNESS GOALS (6 Cards in 3x2 Grid)
+   ========================================================================== */
+.goals-explore-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.goals-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.goals-section-line {
+  flex: 1;
+  max-width: 160px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.goals-section-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.goals-section-icon {
+  color: #07552F;
+}
+
+.goals-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.goals-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6DECA;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  padding: 1.15rem;
+  position: relative;
+}
+
+.goals-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(7, 85, 47, 0.1);
+  border-color: #D49A00;
+}
+
+.goals-card-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 130px;
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #F4EEDC;
+  margin-bottom: 1.1rem;
+}
+
+.goals-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.goals-card-badge {
+  position: absolute;
+  bottom: -15px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #07552F;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(7, 85, 47, 0.35);
+  border: 2px solid #FFFFFF;
+  z-index: 2;
+}
+
+.goals-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-top: 0.4rem;
+}
+
+.goals-card-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.22rem;
+  font-weight: 400;
+  color: #101820;
+  margin: 0 0 0.65rem 0;
+  line-height: 1.25;
+}
+
+.goals-card-desc {
+  font-size: 0.84rem;
+  line-height: 1.62;
+  color: #4A554F;
+  margin: 0 0 1.25rem 0;
+  flex: 1;
+}
+
+.goals-card-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.goals-card-pill-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background-color: #EAF2D7;
+  color: #07552F;
+  padding: 0.55rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: 1px solid #D6E5C2;
+}
+
+.goals-card-pill-btn:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(7, 85, 47, 0.2);
+}
+
+/* ==========================================================================
+   SECTION 2: IMMERSIVE WELLNESS EXPERIENCE SECTION
+   ========================================================================== */
+.goals-immersive-section {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.goals-immersive-card {
+  background-color: #FFFDF8;
+  border: 1px solid #E6DECA;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 1.5rem 1.85rem;
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  gap: 2.25rem;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(7, 85, 47, 0.05);
+}
+
+.goals-immersive-image-wrap {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #D49A00;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.goals-immersive-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.goals-immersive-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.goals-immersive-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.goals-immersive-icon-bubble {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #07552F;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(7, 85, 47, 0.2);
+}
+
+.goals-immersive-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.goals-immersive-desc {
+  font-size: 0.88rem;
+  line-height: 1.62;
+  color: #4A554F;
+  margin: 0 0 1.25rem 0;
+}
+
+.goals-immersive-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   SECTION 3: MAIN CTA BANNER
+   ========================================================================== */
+.goals-banner-section {
+  padding: 1rem 0 2.5rem;
+}
+
+.goals-full-banner {
+  background: linear-gradient(135deg, #003D25 0%, #07552F 100%);
+  border-radius: 20px;
+  color: #FFFFFF;
+  padding: 1.4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 61, 37, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.goals-banner-left-wrap {
+  width: 110px;
+  height: 72px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.goals-banner-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.goals-banner-divider {
+  width: 1px;
+  height: 65px;
+  background-color: rgba(212, 154, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.goals-banner-center {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  flex: 1;
+}
+
+.goals-banner-heading {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.goals-banner-text {
+  font-size: 0.86rem;
+  line-height: 1.58;
+  color: #E2EDE3;
+  margin: 0;
+}
+
+.goals-banner-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #FFFFFF;
+  color: #07552F;
+  padding: 0.75rem 1.4rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.22s ease;
+  flex-shrink: 0;
+  text-align: left;
+}
+
+.goals-banner-cta-btn:hover {
+  transform: translateY(-2px);
+  background-color: #FFF9EC;
+  color: #003D25;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================================================
+   SECTION 4: RECOMMENDED INTERNAL LINKS (5 Buttons)
+   ========================================================================== */
+.goals-links-section {
+  padding: 1rem 0 2rem;
+}
+
+.goals-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.goals-links-line {
+  flex: 1;
+  max-width: 140px;
+  height: 1px;
+  background-color: #D49A00;
+  opacity: 0.6;
+}
+
+.goals-links-title {
+  font-family: 'DM Serif Display', 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 400;
+  color: #101820;
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.goals-links-icon {
+  color: #D49A00;
+}
+
+.goals-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+}
+
+.goals-link-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background-color: #FFFFFF;
+  color: #101820;
+  border: 1px solid #D6CEBC;
+  padding: 0.65rem 1.45rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.goals-link-pill-icon {
+  color: #07552F;
+}
+
+.goals-link-pill:hover {
+  background-color: #07552F;
+  color: #FFFFFF;
+  border-color: #07552F;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(7, 85, 47, 0.2);
+}
+
+.goals-link-pill:hover .goals-link-pill-icon {
+  color: #FFFFFF;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .goals-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goals-immersive-card {
+    grid-template-columns: 1fr;
+  }
+
+  .goals-full-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .goals-banner-divider {
+    display: none;
+  }
+
+  .goals-banner-heading {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .goals-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .goals-hero-image-wrap {
+    justify-content: center;
+  }
+
+  .goals-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goals-full-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .goals-banner-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .goals-links-row {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .goals-link-pill {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

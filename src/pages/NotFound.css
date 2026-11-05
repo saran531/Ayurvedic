@@ -1,0 +1,421 @@
+/* ==========================================================================
+   Custom 404 Not Found Page Styles - RBN AYUSH HEALTH CARE
+   Clean, full-width responsive recreation based on approved reference
+   ========================================================================== */
+
+.notfound-page {
+  position: relative;
+  width: 100%;
+  background-color: #FDF6EC;
+  color: #101820;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: calc(100vh - 160px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  padding: 4rem 0;
+  box-sizing: border-box;
+}
+
+/* Container aligned with site-wide container specifications */
+.notfound-container {
+  width: 100%;
+  max-width: var(--container-max-width, 1240px);
+  margin: 0 auto;
+  padding: 0 var(--container-padding, 1.5rem);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+/* Grid Layout */
+.notfound-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+/* ==========================================================================
+   LEFT COLUMN: HERO CONTENT
+   ========================================================================== */
+.notfound-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+  width: 100%;
+}
+
+/* Eyebrow */
+.notfound-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #B5852E;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.notfound-eyebrow-line {
+  display: inline-block;
+  width: 32px;
+  height: 1.5px;
+  background-color: #B5852E;
+}
+
+/* Main Heading */
+.notfound-heading {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: clamp(2.3rem, 3.4vw, 3.3rem);
+  line-height: 1.18;
+  color: #073B25;
+  margin: 0 0 1.25rem 0;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  word-break: normal;
+  overflow-wrap: break-word;
+  hyphens: none;
+  position: relative;
+}
+
+.notfound-heading-leaf {
+  display: inline-block;
+  color: #6F9B37;
+  margin-left: 0.45rem;
+  vertical-align: middle;
+  transform: translateY(-4px);
+}
+
+/* Description */
+.notfound-description {
+  font-size: 1.02rem;
+  line-height: 1.68;
+  color: #4A5568;
+  margin: 0 0 1.4rem 0;
+  max-width: 530px;
+}
+
+/* Auto-Redirect Badge / Countdown Notice */
+.notfound-redirect-timer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: #F4EBD8;
+  border: 1px solid #E2D3B3;
+  border-radius: 9999px;
+  padding: 0.4rem 1.05rem;
+  font-size: 0.82rem;
+  color: #55442A;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+  width: fit-content;
+}
+
+.notfound-timer-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00552F;
+  animation: notfoundPulse 1.2s infinite ease-in-out;
+}
+
+@keyframes notfoundPulse {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+/* Action Buttons Row */
+.notfound-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.15rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.notfound-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  background-color: #00552F;
+  color: #FFFFFF !important;
+  padding: 0.88rem 1.85rem;
+  border-radius: 9999px;
+  font-size: 0.96rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 85, 47, 0.2);
+  transition: all 0.2s ease;
+  border: 1.5px solid transparent;
+}
+
+.notfound-btn-primary:hover {
+  background-color: #073B25;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 85, 47, 0.28);
+}
+
+.notfound-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #073B25;
+  padding: 0.88rem 1.85rem;
+  border-radius: 9999px;
+  font-size: 0.96rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  border: 1.5px solid #CFBE9E;
+  transition: all 0.2s ease;
+}
+
+.notfound-btn-secondary:hover {
+  background-color: rgba(207, 190, 158, 0.2);
+  border-color: #00552F;
+  color: #00552F;
+  transform: translateY(-2px);
+}
+
+/* Support Help Link */
+.notfound-support {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.94rem;
+  color: #2D3748;
+  margin-bottom: 2.25rem;
+}
+
+.notfound-support-icon {
+  color: #00552F;
+  display: inline-flex;
+  align-items: center;
+}
+
+.notfound-support-link {
+  color: #00552F;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  transition: color 0.18s ease;
+}
+
+.notfound-support-link:hover {
+  color: #073B25;
+}
+
+/* Trust Indicators Row */
+.notfound-trust-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #EAE0CE;
+  width: 100%;
+  max-width: 540px;
+}
+
+.notfound-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+}
+
+.notfound-trust-icon {
+  color: #C79524;
+  margin-bottom: 0.2rem;
+  flex-shrink: 0;
+}
+
+.notfound-trust-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #073B25;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.notfound-trust-subtitle {
+  font-size: 0.78rem;
+  color: #5C625B;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   RIGHT COLUMN: 404 ARTWORK
+   ========================================================================== */
+.notfound-visual-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.notfound-visual-frame {
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-visual-img {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 12px 28px rgba(7, 59, 37, 0.08));
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   - Desktop: 1440px and above
+   - Laptop: 1024px–1439px
+   - Tablet: 768px–1023px
+   - Mobile: 320px–767px
+   ========================================================================== */
+
+/* Laptop (1024px to 1439px) */
+@media (max-width: 1200px) {
+  .notfound-grid {
+    gap: 2rem;
+  }
+
+  .notfound-heading {
+    font-size: 2.8rem;
+  }
+
+  .notfound-visual-frame {
+    max-width: 460px;
+  }
+}
+
+/* Tablet (768px to 1023px) */
+@media (max-width: 1023px) {
+  .notfound-page {
+    padding: 3.5rem 0;
+  }
+
+  .notfound-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.5rem;
+  }
+
+  .notfound-content {
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .notfound-eyebrow {
+    justify-content: center;
+  }
+
+  .notfound-heading {
+    font-size: 2.6rem;
+  }
+
+  .notfound-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .notfound-actions {
+    justify-content: center;
+  }
+
+  .notfound-support {
+    justify-content: center;
+  }
+
+  .notfound-trust-row {
+    margin: 0 auto;
+  }
+
+  .notfound-visual-frame {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile (320px to 767px) */
+@media (max-width: 767px) {
+  .notfound-page {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .notfound-heading {
+    font-size: 2.1rem;
+    line-height: 1.22;
+  }
+
+  .notfound-heading-leaf {
+    display: none;
+  }
+
+  .notfound-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .notfound-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .notfound-btn-primary,
+  .notfound-btn-secondary {
+    width: 100%;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.92rem;
+  }
+
+  .notfound-trust-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 1rem;
+    max-width: 320px;
+  }
+
+  .notfound-trust-title {
+    font-size: 0.92rem;
+  }
+
+  .notfound-trust-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .notfound-visual-frame {
+    max-width: 340px;
+  }
+}
+
+/* Small Mobile (320px to 380px) */
+@media (max-width: 380px) {
+  .notfound-heading {
+    font-size: 1.85rem;
+  }
+
+  .notfound-eyebrow {
+    font-size: 0.72rem;
+  }
+}

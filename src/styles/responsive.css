@@ -1,0 +1,442 @@
+/* ==========================================================================
+   RBN AYUSH HEALTH CARE — Global Responsive System
+   Covers Desktop (1440px, 1280px, 1024px), Tablet (820px, 768px),
+   and Mobile (430px, 414px, 390px, 375px)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. GLOBAL OVERFLOW & RESPONSIVE FOUNDATIONS
+   -------------------------------------------------------------------------- */
+html,
+body,
+#root,
+.site-layout {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   2. DESKTOP ADJUSTMENTS (1024px - 1280px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  :root {
+    --container-max-width: 1180px;
+    --container-padding: 1.25rem;
+  }
+
+  .main-nav {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.86rem;
+    padding: 0.45rem 0.2rem;
+  }
+
+  .header-cta-btn {
+    padding: 0.45rem 1rem;
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 1140px) {
+  .brand-tagline-sub {
+    display: none;
+  }
+
+  .main-nav {
+    gap: 0.75rem;
+  }
+
+  .nav-link {
+    font-size: 0.84rem;
+    padding: 0.4rem 0.15rem;
+  }
+
+  .header-cta-btn {
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
+  }
+
+  /* Footer 4-col adjusts to 2x2 grid */
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.25rem;
+  }
+
+  .therapies-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .retreat-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .retreat-banner-content {
+    grid-template-columns: 1fr;
+  }
+
+  .retreat-benefits-list {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding-top: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. TABLET & IPAD (768px - 992px, covering 768px and 820px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  /* Header navigation switches to mobile toggle / drawer */
+  .main-nav,
+  .header-cta-btn {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    display: inline-flex !important;
+  }
+
+  /* Topbar hides secondary badges to fit tablet width cleanly */
+  .topbar-badges .badge-item-hide-sm {
+    display: none;
+  }
+
+  /* Hero Sections: 2-column heroes stack gracefully with centered image */
+  .hero-grid,
+  .about-hero-grid,
+  .acu-hero-grid,
+  .ozone-hero-grid,
+  .iv-hero-grid,
+  .yoga-hero-grid,
+  .retreat-hero-grid,
+  .metabolic-hero-grid,
+  .gut-hero-grid,
+  .revival-hero-grid,
+  .lifestyle-hero-grid,
+  .camps-hero-grid,
+  .awareness-hero-grid,
+  .goals-hero-grid,
+  .library-hero-grid,
+  .contact-hero-grid,
+  .ayush-hero-grid,
+  .naturopathy-hero-grid,
+  .hydro-hero-grid,
+  .shirodhara-hero-grid {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-description,
+  .about-hero-desc,
+  .acu-hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-cta-group,
+  .hero-action-buttons {
+    justify-content: center;
+  }
+
+  /* Arch image frames centered on tablet */
+  .hero-arch-container,
+  .hero-image-wrap,
+  .about-hero-img-col,
+  .acu-hero-image-wrap {
+    margin: 0 auto;
+    max-width: 440px;
+  }
+
+  /* Multi-column grids adapt to 2 columns */
+  .therapies-grid,
+  .programs-grid,
+  .why-choose-grid,
+  .camps-grid,
+  .library-grid,
+  .placeholder-grid,
+  .benefit-strip-card,
+  .journey-steps-row,
+  .acu-process-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem;
+  }
+
+  .benefit-strip-item:nth-child(2) {
+    border-right: none;
+  }
+
+  /* Process arrows hidden on tablet */
+  .journey-step-arrow,
+  .acu-process-arrow {
+    display: none !important;
+  }
+
+  /* Single column grids */
+  .journey-grid,
+  .social-proof-grid,
+  .insights-faq-grid,
+  .acu-faq-cta-grid,
+  .acu-safety-banner {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Footer 2 columns on tablet */
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. MOBILE PHONES (375px - 640px, covering 375px, 390px, 414px, 430px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 640px) {
+  :root {
+    --header-height: 68px;
+    --container-padding: 1rem;
+  }
+
+  /* Topbar */
+  .topbar {
+    font-size: 0.72rem;
+    padding: 0.3rem 0;
+  }
+
+  .topbar-container {
+    justify-content: center;
+  }
+
+  .topbar-right {
+    display: none;
+  }
+
+  /* Brand Logo */
+  .brand-icon-wrapper {
+    width: 34px;
+    height: 34px;
+  }
+
+  .brand-title {
+    font-size: 1.18rem;
+  }
+
+  .brand-subtitle-line {
+    font-size: 0.62rem;
+  }
+
+  .brand-tagline-sub {
+    display: none;
+  }
+
+  /* Typography fluid scaling */
+  h1,
+  .hero-heading {
+    font-size: clamp(1.8rem, 7vw, 2.3rem) !important;
+    line-height: 1.22 !important;
+  }
+
+  h2,
+  .section-title {
+    font-size: clamp(1.5rem, 5.5vw, 1.95rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  h3,
+  .card-title {
+    font-size: clamp(1.2rem, 4vw, 1.45rem) !important;
+  }
+
+  p {
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  /* Breadcrumbs wrap cleanly on mobile */
+  .breadcrumbs-bar {
+    padding: 0.6rem 0 0.3rem;
+    font-size: 0.8rem;
+  }
+
+  .breadcrumbs-list {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+
+  /* Section Spacing */
+  section,
+  .page-section {
+    padding: 2.75rem 0 !important;
+  }
+
+  /* Convert all multi-column cards & grids to single column */
+  .therapies-grid,
+  .programs-grid,
+  .why-choose-grid,
+  .camps-grid,
+  .library-grid,
+  .placeholder-grid,
+  .benefit-strip-card,
+  .journey-steps-row,
+  .acu-process-row,
+  .team-grid,
+  .values-grid,
+  .features-grid,
+  .cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .benefit-strip-item {
+    border-right: none !important;
+    padding-right: 0 !important;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid rgba(232, 224, 207, 0.4);
+  }
+
+  .benefit-strip-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* Forms: Single column and touch-friendly */
+  .form-row,
+  .form-row-2col,
+  .form-row-3col,
+  .consultation-form-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.85rem !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100% !important;
+    min-height: 44px;
+    font-size: 16px !important; /* Prevents auto-zoom on iOS */
+    box-sizing: border-box;
+  }
+
+  /* Buttons: Full width where appropriate */
+  .hero-cta-group,
+  .hero-action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .hero-cta-group .btn,
+  .hero-action-buttons .btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 44px;
+  }
+
+  /* Insight Cards Horizontal to Vertical */
+  .insight-card-h {
+    grid-template-columns: 1fr !important;
+  }
+
+  .insight-thumb {
+    width: 100% !important;
+    height: 160px !important;
+  }
+
+  /* Arch Images */
+  .hero-arch-container,
+  .hero-image-wrap,
+  .about-hero-img-col,
+  .acu-hero-image-wrap {
+    max-width: 320px;
+    width: 100%;
+  }
+
+  /* CTA Banners */
+  .cta-banner-card,
+  .acu-cta-banner-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 1.75rem 1.25rem !important;
+    gap: 1.25rem;
+  }
+
+  .cta-banner-btn,
+  .acu-cta-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Footer: Single Column Stack */
+  .footer {
+    padding-top: 3rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-desc {
+    max-width: 100%;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.85rem;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. EXTRA-SMALL MOBILE (375px - 390px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 390px) {
+  :root {
+    --container-padding: 0.85rem;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .brand-subtitle-line {
+    font-size: 0.58rem;
+  }
+
+  .btn {
+    padding: 0.5rem 0.85rem;
+    font-size: 0.82rem;
+  }
+
+  .topbar-badge-item {
+    font-size: 0.7rem;
+  }
+
+  .hero-arch-container,
+  .hero-image-wrap,
+  .about-hero-img-col,
+  .acu-hero-image-wrap {
+    max-width: 290px;
+  }
+}
